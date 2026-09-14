@@ -1,0 +1,47 @@
+for col in data.columns:
+    cond=data[col].isna()
+    count = cond.sum()
+    if count>0:
+        missing_vals[col]={"broj":cond.sum(),
+                           "primeri":data.loc[cond,col].head().tolist()}
+
+issues.append(missing_vals)
+
+non_num_vals=dict()
+non_num_vals["klasa"]="nenumericke_u_numerickim"
+
+for col in ["mesecni_racun_rsd","potrosnja_gb"]:
+    non_num= pd.to_numeric(data[col],errors="coerce").isna() & data[col].notna()
+    non_num_vals[col]={
+        "broj":non_num.sum(),
+        "primeri":data.loc[non_num,col].head().tolist()
+    }
+
+issues.append(non_num_vals)
+
+duplicates=dict()
+duplicates["klasa"]="duplikati_cisti"
+
+for col in data.columns:
+    cond = data[col].duplicated()
+    count = cond.sum()
+    example = data.loc[cond,col].head().unique().tolist()
+
+    duplicates[col]={"broj":count,"primer":example}
+
+issues.append(duplicates)
+
+cat_issues=dict()
+cat_issues["klasa"]="nedosledne_kategorije"
+
+for cat in categories:
+
+    cat_issues[cat]=f"{cat} {data[cat].value_counts().to_dict()}"
+
+issues.append(cat_issues)
+
+#for issue in issues:
+ #   print(f"{issue}:{issues[issue]}\n")
+
+issues_report = pd.DataFrame(issues).T
+display(issues_report)

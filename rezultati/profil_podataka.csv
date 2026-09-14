@@ -1,0 +1,16 @@
+,kolona,tip,broj_nan,udeo_nan,broj_jedinstvenih,broj_nenum,primer_problema
+0,id_korisnika,str,0,0.0,1200,1232,"['K00900', 'K00523', 'K00536', 'K00571', 'K00677']"
+1,region,str,24,0.01948051948051948,17,1208,"['Šumadija i Zapadna Srbija', 'Južna i Istočna Srbija', 'Beograd', 'Šumadija i Zapadna Srbija', 'Vojvodina']"
+2,pol,str,0,0.0,10,1232,"['M', 'Ž', 'Ž', 'M', 'M']"
+3,godine,float64,48,0.03896103896103896,67,0,[]
+4,tip_paketa,str,0,0.0,12,1232,"['Prepaid', 'Postpaid', 'Postpaid', 'Postpaid', 'Prepaid']"
+5,staz_meseci,int64,0,0.0,160,0,[]
+6,mesecni_racun_rsd,object,36,0.02922077922077922,1027,34,"['2235 RSD', '3.274,00', '1.861 din', '2.549,00', '1250 RSD']"
+7,potrosnja_gb,object,36,0.02922077922077922,248,18,"['4,5', '1,8', '6,4', '10,2', '7,5']"
+8,minuti_poziva,int64,0,0.0,449,0,[]
+9,broj_sms,int64,0,0.0,37,0,[]
+10,broj_reklamacija,int64,0,0.0,8,0,[]
+11,kanal_prodaje,str,12,0.00974025974025974,12,1220,"[' Poslovnica ', 'Partner', 'Online', 'Poslovnica', 'Online']"
+12,datum_aktivacije,str,0,0.0,1014,1232,"['2025-07-29', '2026-01-31', '2026-03-27', '2025-08-09', '2026-07-24']"
+13,ocena_zadovoljstva,float64,96,0.07792207792207792,5,0,[]
+14,churn,str,0,0.0,11,1216,"['Ne', 'Da', 'Ne', 'Ne', 'Ne']"

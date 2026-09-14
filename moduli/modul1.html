@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modul 1 od 3, dani 1–3 — Statistička analiza dataseta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Source+Sans+3:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14302E; --ink-2:#2F4A47; --muted:#6B7C79; --line:#D5DEDB;
+  --page:#EEF2F0; --paper:#FFFFFF; --sage:#7FA99B; --sage-soft:#E4EEEA;
+  --amber:#E8A33D; --amber-soft:#FBF1DF; --brick:#B85042; --brick-soft:#F6E4E1;
+  --code-bg:#1B2A29; --code-fg:#E6EEEA; --code-accent:#A9D3C4;
+  --serif:"Source Serif 4","Source Serif Pro",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3","Source Sans Pro","Segoe UI",system-ui,-apple-system,sans-serif;
+  --mono:"Source Code Pro","Cascadia Code","JetBrains Mono",Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important}}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55}
+a{color:var(--ink-2)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.layout{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:100vh}
+/* ---------- rail ---------- */
+.rail{position:sticky;top:0;height:100vh;overflow:auto;padding:28px 22px;background:var(--ink);color:#DCE7E3;border-right:1px solid #0E2422}
+.rail .brand{font-family:var(--serif);font-size:15px;line-height:1.3;color:#B9CCC6;margin:0 0 26px}
+.rail .brand strong{display:block;color:#fff;font-size:18px;font-weight:600}
+.rail nav a{display:flex;gap:12px;align-items:baseline;color:#DCE7E3;text-decoration:none;padding:9px 10px;border-radius:8px;font-size:15.5px}
+.rail nav a:hover{background:#1F3B38}
+.rail nav a.current{background:#25443F;color:#fff}
+.rail nav a .n{font-family:var(--mono);font-size:12px;color:var(--code-accent);min-width:1.6em}
+.rail h4{font-size:12.5px;letter-spacing:.02em;color:#8FA9A3;margin:26px 0 8px;font-weight:600}
+.rail .tasks a{display:block;color:#C9D8D4;text-decoration:none;font-size:14px;padding:5px 10px 5px 30px;position:relative;border-radius:6px}
+.rail .tasks a::before{content:"";position:absolute;left:11px;top:11px;width:9px;height:9px;border-radius:50%;border:1.5px solid #7FA99B}
+.rail .tasks a.done::before{background:var(--amber);border-color:var(--amber)}
+.rail .tasks a:hover{background:#1F3B38}
+.progress{margin-top:18px;font-size:13px;color:#B9CCC6}
+.progress .bar{height:6px;background:#2C4B47;border-radius:3px;overflow:hidden;margin-top:6px}
+.progress .bar i{display:block;height:100%;width:0;background:var(--amber);transition:width .25s}
+/* ---------- main ---------- */
+main{padding:52px 64px 96px;max-width:920px}
+.kicker{font-family:var(--mono);font-size:13px;color:var(--muted);margin:0 0 10px}
+h1{font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.12;margin:0 0 14px;letter-spacing:-.01em}
+.lead{font-size:19px;color:var(--ink-2);max-width:62ch;margin:0 0 26px}
+.meta{display:flex;flex-wrap:wrap;gap:10px 28px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:40px;font-size:15px}
+.meta div span{display:block;color:var(--muted);font-size:13px}
+h2{font-family:var(--serif);font-weight:600;font-size:27px;margin:54px 0 14px;line-height:1.2}
+h3{font-size:19px;font-weight:600;margin:28px 0 10px}
+p,li{max-width:70ch}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+code{font-family:var(--mono);font-size:.9em;background:#E3EAE7;padding:1px 5px;border-radius:4px}
+pre.code{background:var(--code-bg);color:var(--code-fg);padding:18px 20px;border-radius:10px;overflow:auto;font-family:var(--mono);font-size:14px;line-height:1.5;margin:14px 0}
+pre.code code{background:none;padding:0;font-size:inherit;color:inherit}
+pre.code .c{color:#8FB0A5;font-style:italic}
+pre.code .k{color:#F2C879}
+pre.code .s{color:#C9E4D6}
+pre.code .todo{color:#FFD08A;font-weight:600}
+/* ---------- task ---------- */
+.task{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 30px 22px;margin:22px 0;scroll-margin-top:24px}
+.task header{display:flex;align-items:flex-start;gap:16px;justify-content:space-between;margin-bottom:6px}
+.task header h3{margin:0;font-size:21px}
+.task header h3 small{display:block;font-family:var(--mono);font-size:12.5px;color:var(--muted);font-weight:400;margin-bottom:4px}
+.task .eta{font-size:13px;color:var(--muted);white-space:nowrap;margin-top:6px}
+.done-toggle{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-2);cursor:pointer;user-select:none;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:#F7FAF9}
+.done-toggle input{accent-color:var(--amber);width:16px;height:16px;margin:0}
+.task.is-done{border-color:var(--sage)}
+.task.is-done header h3::after{content:" ✓";color:var(--sage)}
+details{border:1px solid var(--line);border-radius:10px;padding:0;margin:12px 0;background:#F7FAF9}
+details summary{cursor:pointer;padding:11px 16px;font-weight:600;font-size:15px;list-style:none;display:flex;align-items:center;gap:10px}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸";font-size:13px;color:var(--muted);transition:transform .15s}
+details[open] summary::before{transform:rotate(90deg)}
+details > div{padding:0 16px 14px}
+details.expect{background:#F1F5F3}
+details.expect summary{color:var(--ink)}
+pre.console{font-family:var(--mono);font-size:13.5px;line-height:1.5;white-space:pre-wrap;background:#0F1F1E;color:#CFE3DB;padding:14px 16px;border-radius:8px;margin:6px 0 4px;overflow:auto;border-left:4px solid var(--amber)}
+pre.console .prompt{color:#F2C879}
+.note{background:var(--sage-soft);border-radius:10px;padding:14px 18px;margin:16px 0;font-size:15.5px}
+.warn{background:var(--brick-soft);border-radius:10px;padding:14px 18px;margin:16px 0;font-size:15.5px}
+.warn strong,.note strong{display:block;margin-bottom:3px}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:14px 0;background:var(--paper)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;background:#F1F5F3}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:13.5px}
+/* ---------- checkpoint ---------- */
+.checkpoint{margin:56px 0 0;border:2px solid var(--amber);border-radius:16px;padding:28px 32px;background:var(--amber-soft);position:relative}
+.checkpoint h2{margin:0 0 10px;font-size:25px}
+.checkpoint .stamp{position:absolute;right:26px;top:-16px;background:var(--amber);color:#1E1500;font-family:var(--mono);font-size:12.5px;padding:5px 12px;border-radius:999px;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:16px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+.pager a{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:10px;background:var(--ink);color:#fff;font-weight:600;font-size:15px}
+.pager a.prev{background:transparent;color:var(--ink);border:1px solid var(--line)}
+/* ---------- index ---------- */
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 8px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{font-size:15.5px;margin:0;color:var(--ink-2)}
+.modules{display:grid;gap:14px;margin:18px 0}
+.modules a{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 22px;color:var(--ink)}
+.modules a:hover{border-color:var(--sage)}
+.modules .big{font-family:var(--serif);font-size:40px;color:var(--sage);font-weight:600;line-height:1}
+.modules b{display:block;font-size:18px}
+.modules span{font-size:15px;color:var(--muted)}
+.modules .days{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.timeline{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:16px 0}
+.timeline div{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px 8px;font-size:13px;min-height:88px}
+.timeline div b{display:block;font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:4px}
+.timeline .m1{border-top:4px solid var(--sage)} .timeline .m2{border-top:4px solid var(--ink)} .timeline .m3{border-top:4px solid var(--amber)}
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .rail{position:static;height:auto;padding:18px}
+  .rail .tasks,.rail h4,.progress{display:none}
+  main{padding:28px 20px 72px}
+  h1{font-size:32px}
+  .hero-grid{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr 1fr}
+  .meta{gap:8px 20px}
+  .modules a{grid-template-columns:48px 1fr}
+  .modules .days{grid-column:2}
+}
+</style>
+</head>
+<body data-page="modul1">
+<div class="layout">
+  <aside class="rail">
+    <p class="brand"><strong>Statistička analiza dataseta</strong>Praksa u Data &amp; AI timu, dve nedelje</p>
+    <nav><a href="index.html" class=""><span class="n">0</span>Zadatak i rubrika</a><a href="modul1.html" class="current"><span class="n">1</span>Profilisanje i mere</a><a href="modul2.html" class=""><span class="n">2</span>Čišćenje i priprema</a><a href="modul3.html" class=""><span class="n">3</span>EDA i izveštaj</a></nav>
+    <h4>Zadaci u ovom modulu</h4><div class="tasks"><a href="#z1-1">Učitavanje i prvi pogled</a><a href="#z1-2">Profil kvaliteta podataka</a><a href="#z1-3">Mere centralne tendencije — ručno</a><a href="#z1-4">Funkcija za sve mere</a><a href="#z1-5">Interpretacija i lista sumnjivih stvari</a></div><div class="progress">Urađeno <span class="count">0 / 0</span><div class="bar"><i></i></div></div>
+  </aside>
+  <main>
+    <p class="kicker">Modul 1 od 3, dani 1–3</p>
+    <h1>Učitavanje, profilisanje i mere centralne tendencije</h1>
+    <p class="lead">Pre nego što išta promeniš, izmeri. Cilj modula je da tačno znaš šta je u podacima, koliko ih ima, gde su rupe i šta odskače.</p>
+    <div class="meta"><div><span>Ulaz</span>telekom_korisnici.xlsx</div><div><span>Izlaz</span>notebook + 2 CSV tabele</div><div><span>Prezentacija</span>P1 — Deskriptivna statistika</div><div><span>Vreme</span>≈ 6 h rada</div></div>
+    
+<h2>Pre nego što počneš</h2>
+<p>Pogledaj prezentaciju <strong>P1 — Deskriptivna statistika</strong>. Zatim pripremi okruženje:</p>
+<pre class="code"><code>python -m venv .venv
+<span class="c"># Windows: .venv\Scripts\activate     Linux/macOS: source .venv/bin/activate</span>
+pip install pandas numpy scipy matplotlib seaborn openpyxl jupyter
+jupyter notebook          # napravi 01_profilisanje.ipynb</code></pre>
+<p>Radi u folderu u koji si raspakovao/la zip. Sirovi fajl <code>telekom_korisnici.xlsx</code> nikad ne menjaj; sve što proizvedeš (notebookovi, CSV, grafikoni) ide u folder <code>rezultati/</code>.</p>
+
+
+<section class="task" id="z1-1">
+  <header><h3><small>Zadatak 1.1</small>Učitavanje i prvi pogled</h3><div class="eta">≈ 30 min</div></header>
+  
+<p>Učitaj oba sheeta. Odgovori na tri pitanja: koliko ima vrsta i kolona, koji tip pandas dodeljuje svakoj koloni i da li se to slaže sa rečnikom podataka.</p>
+<pre class="code"><code>import pandas as pd
+import numpy as np
+
+PUTANJA = "telekom_korisnici.xlsx"
+df = pd.read_excel(PUTANJA, sheet_name="Podaci")
+recnik = pd.read_excel(PUTANJA, sheet_name="Rečnik_podataka")
+
+print(df.shape)
+print(df.dtypes)
+df.head(10)
+<span class="todo"># TODO: uporedi df.dtypes sa kolonom "tip" u rečniku — koje dve kolone odskaču i zašto?</span></code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">(1232, 15)
+mesecni_racun_rsd      object   ← očekivan decimalni broj
+potrosnja_gb           object   ← očekivan decimalni broj
+godine                float64   ← ceo broj, ali float jer ima NaN
+datum_aktivacije       object   ← očekivan datum</pre></div></details><details class="hint"><summary>Nagoveštaj</summary><div><p>Kolona koja bi trebalo da bude numerička, a pandas je učitao kao <code>object</code>, gotovo uvek znači da bar jedna ćelija sadrži tekst. Pronađi je sa <code>pd.to_numeric(df[kol], errors="coerce")</code> — vrednosti koje postanu NaN, a nisu bile prazne, su krivci.</p></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z1-2">
+  <header><h3><small>Zadatak 1.2</small>Profil kvaliteta podataka</h3><div class="eta">≈ 1,5 h</div></header>
+  
+<p>Napravi sistematičan profil: nedostajuće vrednosti, duplikati, jedinstvene vrednosti kategorijskih kolona i ne-numerički unosi u numeričkim kolonama. Rezultat sačuvaj kao tabelu <code>rezultati/profil_kvaliteta.csv</code> (kolona, tip, broj_nan, udeo_nan, broj_jedinstvenih, primer_problema).</p>
+<pre class="code"><code>nan = df.isna().sum()
+print(nan[nan &gt; 0])
+print("Potpuni duplikati:", df.duplicated().sum())
+print("Duplirani ID:", df["id_korisnika"].duplicated().sum())
+
+for kol in ["region", "pol", "tip_paketa", "kanal_prodaje", "churn"]:
+    print(kol, df[kol].nunique(), df[kol].value_counts(dropna=False).to_dict())
+
+for kol in ["mesecni_racun_rsd", "potrosnja_gb"]:
+    ne_num = pd.to_numeric(df[kol], errors="coerce").isna() &amp; df[kol].notna()
+    print(kol, ne_num.sum(), df.loc[ne_num, kol].head().tolist())
+
+<span class="todo"># TODO: proveri i datum_aktivacije — koliko različitih formata prepoznaješ?</span>
+<span class="todo"># TODO: proveri opsege numeričkih kolona (min/max) i uporedi sa rečnikom</span></code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">region 24, godine 48, mesecni_racun_rsd 36, potrosnja_gb 36,
+kanal_prodaje 12, ocena_zadovoljstva 96
+Potpuni duplikati: 22        Duplirani ID: 32
+region: 17 jedinstvenih  (očekivano 4)
+pol: 10 jedinstvenih      (očekivano 2)
+tip_paketa: 12            (očekivano 3)
+kanal_prodaje: 12         (očekivano 4)
+churn: 11                 (očekivano 2)
+mesecni_racun_rsd: 34 ne-numeričkih  npr. '2235 RSD', '3.274,00', '1.861 din'
+potrosnja_gb: 18 ne-numeričkih       npr. '4,5', '10,2'</pre></div></details><details class="hint"><summary>Nagoveštaj</summary><div><p>Zašto je duplikata po ID-ju više nego potpunih duplikata? Deset vrsta ima isti ID, ali se razlikuju u nečemu sitnom. Pronađi ih: <code>df[df.id_korisnika.duplicated(keep=False)].sort_values("id_korisnika")</code>. Ovo je važno za modul 2 — redosled koraka čišćenja nije proizvoljan.</p></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z1-3">
+  <header><h3><small>Zadatak 1.3</small>Mere centralne tendencije — ručno</h3><div class="eta">≈ 1 h</div></header>
+  
+<p>Za kolonu <code>godine</code> izračunaj aritmetičku sredinu, medijanu i mod koristeći samo <code>numpy</code> (bez <code>.mean()</code>, <code>.median()</code>, <code>.mode()</code>). Zatim uporedi sa pandas rezultatom i objasni u jednoj rečenici kako se tretiraju NaN vrednosti.</p>
+<pre class="code"><code>x = pd.to_numeric(df["godine"], errors="coerce").dropna().to_numpy()
+
+sredina = x.sum() / len(x)
+
+xs = np.sort(x)
+n = len(xs)
+medijana = (xs[n//2 - 1] + xs[n//2]) / 2 if n % 2 == 0 else xs[n//2]
+
+vrednosti, brojevi = np.unique(x, return_counts=True)
+mod = vrednosti[brojevi.argmax()]
+
+print(sredina, medijana, mod)
+print(df["godine"].mean(), df["godine"].median(), df["godine"].mode().tolist())
+<span class="todo"># TODO: izračunaj i otežanu sredinu godina gde je težina staz_meseci (np.average)</span>
+<span class="todo"># TODO: šta se dešava sa sredinom ako NE izbaciš NaN? A sa np.nanmean?</span></code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">42.237  42.5  [mod je 43 ili 45 — proveri da li ima više modova]
+42.237  42.5  [43.0]</pre></div></details><details class="hint"><summary>Nagoveštaj</summary><div><p>Sredina 42,24 i medijana 42,5 su blizu — raspodela godina je približno simetrična. Zapamti ovo poređenje; u zadatku 1.4 videćeš kolonu gde se razlikuju za više od 600 dinara.</p></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z1-4">
+  <header><h3><small>Zadatak 1.4</small>Funkcija za sve mere</h3><div class="eta">≈ 2 h</div></header>
+  
+<p>Napiši funkciju <code>mere(x)</code> koja za numeričku seriju vraća rečnik sa: n, aritmetička sredina, medijana, mod, geometrijska sredina, harmonijska sredina, 10% trimovana sredina, raspon, varijansa uzorka, standardna devijacija, IQR, koeficijent varijacije (%), asimetrija, spljoštenost (višak), Q1, Q3, P95. Primeni je na svih 8 numeričkih kolona sirovih podataka i sačuvaj tabelu <code>rezultati/mere_sirovo.csv</code>.</p>
+<pre class="code"><code>from scipy import stats
+
+def mere(x: pd.Series) -&gt; dict:
+    x = pd.to_numeric(x, errors="coerce").dropna().astype(float)
+    poz = x[x &gt; 0]                      # geometrijska i harmonijska traže pozitivne vrednosti
+    return {
+        "n": len(x),
+        "aritmeticka_sredina": x.mean(),
+        "medijana": x.median(),
+        "mod": x.mode().iloc[0],
+        "geometrijska_sredina": stats.gmean(poz),
+        "harmonijska_sredina": stats.hmean(poz),
+        "trimovana_10": stats.trim_mean(x, 0.10),
+        <span class="todo"># TODO: raspon, varijansa (ddof=1), std, IQR, koef. varijacije</span>
+        <span class="todo"># TODO: asimetrija i spljoštenost (stats.skew / stats.kurtosis, bias=False)</span>
+        <span class="todo"># TODO: Q1, Q3, P95 (x.quantile)</span>
+    }
+
+NUM = ["godine", "staz_meseci", "mesecni_racun_rsd", "potrosnja_gb",
+       "minuti_poziva", "broj_sms", "broj_reklamacija", "ocena_zadovoljstva"]
+tabela = pd.DataFrame({k: mere(df[k]) for k in NUM}).T
+tabela.round(2).to_csv("rezultati/mere_sirovo.csv")
+tabela[["n", "aritmeticka_sredina", "medijana", "std", "asimetrija"]].round(2)</code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">                       n   sredina  medijana      std  asimetrija
+godine              1184     42.24      42.5    14.93        0.86
+staz_meseci         1232     41.55      29.0    39.50        1.61
+mesecni_racun_rsd   1162   3006.55    2381.5  3865.28       10.85
+potrosnja_gb        1178     11.74       6.3    60.94       15.11
+minuti_poziva       1232    279.22     258.5   431.45       15.24
+broj_sms            1232     38.41      38.0     6.14        0.23
+broj_reklamacija    1232      0.76       0.0     1.03        1.77
+ocena_zadovoljstva  1136      3.62       4.0     0.98       -0.30</pre></div></details><details class="hint"><summary>Nagoveštaj</summary><div><p>Asimetrija od 10 ili 15 kod realnih podataka o potrošnji nije prirodna — takve vrednosti gotovo uvek znače nekoliko ekstremnih unosa koji vuku sredinu. Pogledaj <code>df[kol].nlargest(10)</code> za svaku kolonu sa asimetrijom iznad 3.</p></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z1-5">
+  <header><h3><small>Zadatak 1.5</small>Interpretacija i lista sumnjivih stvari</h3><div class="eta">≈ 1 h</div></header>
+  
+<p>U markdown ćeliji notebooka napiši:</p>
+<ol>
+<li>Za <code>mesecni_racun_rsd</code>: zašto se sredina i medijana razlikuju za 625 dinara i koju od njih bi prijavio/la menadžmentu.</li>
+<li>Za koje tri kolone geometrijska sredina ima smisla, a za koje nema (i zašto).</li>
+<li>Šta ti govori koeficijent varijacije kod <code>broj_reklamacija</code> u poređenju sa <code>broj_sms</code>.</li>
+<li>Listu <strong>svih klasa problema</strong> koje si pronašao/la u podacima — sa kolonom, brojem slučajeva i primerom. Očekujemo bar šest klasa.</li>
+</ol>
+<div class="warn"><strong>Česta greška</strong>Studenti u ovoj fazi već počnu da „popravljaju“ podatke. Nemoj. Modul 1 samo meri i popisuje; svaka izmena ide u modul 2, gde će biti dokumentovana.</div>
+
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<div class="checkpoint"><span class="stamp">Kontrolna tačka 1</span>
+<h2>Šta nosiš mentoru</h2>
+<ul>
+<li><code>01_profilisanje.ipynb</code> — kod i markdown ćelije sa odgovorima iz zadatka 1.5</li>
+<li><code>rezultati/profil_kvaliteta.csv</code> i <code>rezultati/mere_sirovo.csv</code></li>
+<li>Usmeno: tri rečenice o tome šta je najveći rizik za analizu ako se podaci ne očiste</li>
+</ul>
+<p>Mentor će te pitati zašto je <code>duplicated()</code> našao 22, a <code>id_korisnika.duplicated()</code> 32 — spremi odgovor.</p>
+</div>
+    <div class="pager"><a class="prev" href="index.html">← Zadatak</a><a href="modul2.html">Modul 2 →</a></div>
+  </main>
+</div>
+<script>
+(function(){
+  var key = 'stat-zadatak-' + document.body.dataset.page;
+  var store = {};
+  try { store = JSON.parse(localStorage.getItem(key) || '{}'); } catch(e) { store = {}; }
+  var boxes = document.querySelectorAll('.done-toggle input');
+  function paint(){
+    var done = 0;
+    boxes.forEach(function(b){
+      var t = b.closest('.task'); var id = t.id;
+      b.checked = !!store[id];
+      t.classList.toggle('is-done', b.checked);
+      var link = document.querySelector('.rail .tasks a[href="#'+id+'"]');
+      if (link) link.classList.toggle('done', b.checked);
+      if (b.checked) done++;
+    });
+    var p = document.querySelector('.progress');
+    if (p && boxes.length){
+      p.querySelector('.bar i').style.width = Math.round(100*done/boxes.length) + '%';
+      p.querySelector('.count').textContent = done + ' / ' + boxes.length;
+    }
+  }
+  boxes.forEach(function(b){
+    b.addEventListener('change', function(){
+      store[b.closest('.task').id] = b.checked;
+      try { localStorage.setItem(key, JSON.stringify(store)); } catch(e) {}
+      paint();
+    });
+  });
+  paint();
+})();
+</script>
+</body>
+</html>

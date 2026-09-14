@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modul 3 od 3, dani 7–10 — Statistička analiza dataseta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Source+Sans+3:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14302E; --ink-2:#2F4A47; --muted:#6B7C79; --line:#D5DEDB;
+  --page:#EEF2F0; --paper:#FFFFFF; --sage:#7FA99B; --sage-soft:#E4EEEA;
+  --amber:#E8A33D; --amber-soft:#FBF1DF; --brick:#B85042; --brick-soft:#F6E4E1;
+  --code-bg:#1B2A29; --code-fg:#E6EEEA; --code-accent:#A9D3C4;
+  --serif:"Source Serif 4","Source Serif Pro",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3","Source Sans Pro","Segoe UI",system-ui,-apple-system,sans-serif;
+  --mono:"Source Code Pro","Cascadia Code","JetBrains Mono",Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important}}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55}
+a{color:var(--ink-2)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.layout{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:100vh}
+/* ---------- rail ---------- */
+.rail{position:sticky;top:0;height:100vh;overflow:auto;padding:28px 22px;background:var(--ink);color:#DCE7E3;border-right:1px solid #0E2422}
+.rail .brand{font-family:var(--serif);font-size:15px;line-height:1.3;color:#B9CCC6;margin:0 0 26px}
+.rail .brand strong{display:block;color:#fff;font-size:18px;font-weight:600}
+.rail nav a{display:flex;gap:12px;align-items:baseline;color:#DCE7E3;text-decoration:none;padding:9px 10px;border-radius:8px;font-size:15.5px}
+.rail nav a:hover{background:#1F3B38}
+.rail nav a.current{background:#25443F;color:#fff}
+.rail nav a .n{font-family:var(--mono);font-size:12px;color:var(--code-accent);min-width:1.6em}
+.rail h4{font-size:12.5px;letter-spacing:.02em;color:#8FA9A3;margin:26px 0 8px;font-weight:600}
+.rail .tasks a{display:block;color:#C9D8D4;text-decoration:none;font-size:14px;padding:5px 10px 5px 30px;position:relative;border-radius:6px}
+.rail .tasks a::before{content:"";position:absolute;left:11px;top:11px;width:9px;height:9px;border-radius:50%;border:1.5px solid #7FA99B}
+.rail .tasks a.done::before{background:var(--amber);border-color:var(--amber)}
+.rail .tasks a:hover{background:#1F3B38}
+.progress{margin-top:18px;font-size:13px;color:#B9CCC6}
+.progress .bar{height:6px;background:#2C4B47;border-radius:3px;overflow:hidden;margin-top:6px}
+.progress .bar i{display:block;height:100%;width:0;background:var(--amber);transition:width .25s}
+/* ---------- main ---------- */
+main{padding:52px 64px 96px;max-width:920px}
+.kicker{font-family:var(--mono);font-size:13px;color:var(--muted);margin:0 0 10px}
+h1{font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.12;margin:0 0 14px;letter-spacing:-.01em}
+.lead{font-size:19px;color:var(--ink-2);max-width:62ch;margin:0 0 26px}
+.meta{display:flex;flex-wrap:wrap;gap:10px 28px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:40px;font-size:15px}
+.meta div span{display:block;color:var(--muted);font-size:13px}
+h2{font-family:var(--serif);font-weight:600;font-size:27px;margin:54px 0 14px;line-height:1.2}
+h3{font-size:19px;font-weight:600;margin:28px 0 10px}
+p,li{max-width:70ch}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+code{font-family:var(--mono);font-size:.9em;background:#E3EAE7;padding:1px 5px;border-radius:4px}
+pre.code{background:var(--code-bg);color:var(--code-fg);padding:18px 20px;border-radius:10px;overflow:auto;font-family:var(--mono);font-size:14px;line-height:1.5;margin:14px 0}
+pre.code code{background:none;padding:0;font-size:inherit;color:inherit}
+pre.code .c{color:#8FB0A5;font-style:italic}
+pre.code .k{color:#F2C879}
+pre.code .s{color:#C9E4D6}
+pre.code .todo{color:#FFD08A;font-weight:600}
+/* ---------- task ---------- */
+.task{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 30px 22px;margin:22px 0;scroll-margin-top:24px}
+.task header{display:flex;align-items:flex-start;gap:16px;justify-content:space-between;margin-bottom:6px}
+.task header h3{margin:0;font-size:21px}
+.task header h3 small{display:block;font-family:var(--mono);font-size:12.5px;color:var(--muted);font-weight:400;margin-bottom:4px}
+.task .eta{font-size:13px;color:var(--muted);white-space:nowrap;margin-top:6px}
+.done-toggle{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-2);cursor:pointer;user-select:none;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:#F7FAF9}
+.done-toggle input{accent-color:var(--amber);width:16px;height:16px;margin:0}
+.task.is-done{border-color:var(--sage)}
+.task.is-done header h3::after{content:" ✓";color:var(--sage)}
+details{border:1px solid var(--line);border-radius:10px;padding:0;margin:12px 0;background:#F7FAF9}
+details summary{cursor:pointer;padding:11px 16px;font-weight:600;font-size:15px;list-style:none;display:flex;align-items:center;gap:10px}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸";font-size:13px;color:var(--muted);transition:transform .15s}
+details[open] summary::before{transform:rotate(90deg)}
+details > div{padding:0 16px 14px}
+details.expect{background:#F1F5F3}
+details.expect summary{color:var(--ink)}
+pre.console{font-family:var(--mono);font-size:13.5px;line-height:1.5;white-space:pre-wrap;background:#0F1F1E;color:#CFE3DB;padding:14px 16px;border-radius:8px;margin:6px 0 4px;overflow:auto;border-left:4px solid var(--amber)}
+pre.console .prompt{color:#F2C879}
+.note{background:var(--sage-soft);border-radius:10px;padding:14px 18px;margin:16px 0;font-size:15.5px}
+.warn{background:var(--brick-soft);border-radius:10px;padding:14px 18px;margin:16px 0;font-size:15.5px}
+.warn strong,.note strong{display:block;margin-bottom:3px}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:14px 0;background:var(--paper)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;background:#F1F5F3}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:13.5px}
+/* ---------- checkpoint ---------- */
+.checkpoint{margin:56px 0 0;border:2px solid var(--amber);border-radius:16px;padding:28px 32px;background:var(--amber-soft);position:relative}
+.checkpoint h2{margin:0 0 10px;font-size:25px}
+.checkpoint .stamp{position:absolute;right:26px;top:-16px;background:var(--amber);color:#1E1500;font-family:var(--mono);font-size:12.5px;padding:5px 12px;border-radius:999px;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:16px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+.pager a{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:10px;background:var(--ink);color:#fff;font-weight:600;font-size:15px}
+.pager a.prev{background:transparent;color:var(--ink);border:1px solid var(--line)}
+/* ---------- index ---------- */
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 8px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{font-size:15.5px;margin:0;color:var(--ink-2)}
+.modules{display:grid;gap:14px;margin:18px 0}
+.modules a{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 22px;color:var(--ink)}
+.modules a:hover{border-color:var(--sage)}
+.modules .big{font-family:var(--serif);font-size:40px;color:var(--sage);font-weight:600;line-height:1}
+.modules b{display:block;font-size:18px}
+.modules span{font-size:15px;color:var(--muted)}
+.modules .days{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.timeline{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:16px 0}
+.timeline div{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px 8px;font-size:13px;min-height:88px}
+.timeline div b{display:block;font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:4px}
+.timeline .m1{border-top:4px solid var(--sage)} .timeline .m2{border-top:4px solid var(--ink)} .timeline .m3{border-top:4px solid var(--amber)}
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .rail{position:static;height:auto;padding:18px}
+  .rail .tasks,.rail h4,.progress{display:none}
+  main{padding:28px 20px 72px}
+  h1{font-size:32px}
+  .hero-grid{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr 1fr}
+  .meta{gap:8px 20px}
+  .modules a{grid-template-columns:48px 1fr}
+  .modules .days{grid-column:2}
+}
+</style>
+</head>
+<body data-page="modul3">
+<div class="layout">
+  <aside class="rail">
+    <p class="brand"><strong>Statistička analiza dataseta</strong>Praksa u Data &amp; AI timu, dve nedelje</p>
+    <nav><a href="index.html" class=""><span class="n">0</span>Zadatak i rubrika</a><a href="modul1.html" class=""><span class="n">1</span>Profilisanje i mere</a><a href="modul2.html" class=""><span class="n">2</span>Čišćenje i priprema</a><a href="modul3.html" class="current"><span class="n">3</span>EDA i izveštaj</a></nav>
+    <h4>Zadaci u ovom modulu</h4><div class="tasks"><a href="#z3-1">Univarijatna analiza</a><a href="#z3-2">Churn po segmentima</a><a href="#z3-3">Korelacije</a><a href="#z3-4">Tri hipoteze</a><a href="#z3-5">Vizuelizacije za izveštaj</a><a href="#z3-6">Izveštaj i prezentacija</a></div><div class="progress">Urađeno <span class="count">0 / 0</span><div class="bar"><i></i></div></div>
+  </aside>
+  <main>
+    <p class="kicker">Modul 3 od 3, dani 7–10</p>
+    <h1>Eksplorativna analiza i izveštaj</h1>
+    <p class="lead">Podaci su čisti. Sada odgovori na pitanje zbog kojeg je sve ovo počelo — brojkama koje menadžment može da razume i odlukama koje može da donese.</p>
+    <div class="meta"><div><span>Ulaz</span>korisnici_clean.csv</div><div><span>Izlaz</span>izveštaj + prezentacija + notebook</div><div><span>Prezentacija</span>P3 — EDA i izveštavanje</div><div><span>Vreme</span>≈ 10 h rada</div></div>
+    
+<h2>Princip modula</h2>
+<p>Do sada si opisivao/la podatke. Sada odgovaraš na pitanje: <em>ko odlazi i zašto?</em> Svaki rezultat u ovom modulu treba da ima tri dela: broj, poređenje i rečenicu koju bi razumeo neko ko ne zna šta je medijana. Radi u <code>03_analiza.ipynb</code> nad <code>korisnici_clean.csv</code>.</p>
+
+
+<section class="task" id="z3-1">
+  <header><h3><small>Zadatak 3.1</small>Univarijatna analiza</h3><div class="eta">≈ 1,5 h</div></header>
+  
+<p>Za svaku numeričku kolonu napravi histogram sa ucrtanom sredinom i medijanom, i boxplot. Za svaku kategorijsku — bar chart frekvencija. Ne treba svaki grafikon da uđe u izveštaj; treba da ih ti sve vidiš. Ponovo pokreni funkciju <code>mere()</code> iz modula 1 nad čistim podacima.</p>
+<pre class="code"><code>import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_theme(style="whitegrid")
+
+c = pd.read_csv("rezultati/korisnici_clean.csv", parse_dates=["datum_aktivacije"])
+
+fig, ax = plt.subplots(2, 4, figsize=(18, 8))
+for a, kol in zip(ax.flat, NUM):
+    sns.histplot(c[kol].dropna(), bins=35, ax=a)
+    a.axvline(c[kol].mean(), color="orange", ls="--", label="sredina")
+    a.axvline(c[kol].median(), color="red", label="medijana")
+    a.set_title(kol); a.legend(fontsize=8)
+plt.tight_layout()
+<span class="todo"># TODO: boxplotovi + bar chartovi za kategorije</span>
+<span class="todo"># TODO: mere(c[kol]) za sve kolone → rezultati/mere_cisto.csv</span></code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">mesecni_racun_rsd: sredina 2737, medijana 2382, asimetrija 1.17 (desno)
+potrosnja_gb:      sredina 7.75, medijana 6.4, asimetrija 2.31 (izrazito desno)
+godine:            sredina 42.0, medijana 43, asimetrija 0.15 (≈ simetrično)
+staz_meseci:       sredina 41.4, medijana 29, asimetrija 1.62 (mnogo novih korisnika)</pre></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z3-2">
+  <header><h3><small>Zadatak 3.2</small>Churn po segmentima</h3><div class="eta">≈ 1,5 h</div></header>
+  
+<p>Izračunaj stopu churn-a (udeo „Da“) ukupno i po: tipu paketa, regionu, kanalu prodaje, starosnoj grupi, grupi staža i polu. Za svaki segment prikaži i broj korisnika — stopa od 33% na 12 ljudi ne znači ništa. Zatim uporedi medijane numeričkih kolona između korisnika koji su otišli i onih koji su ostali.</p>
+<pre class="code"><code>print(f"Ukupna stopa churn-a: {c['churn_flag'].mean():.1%}")
+
+for kol in ["tip_paketa", "region", "kanal_prodaje", "starosna_grupa", "staz_grupa", "pol"]:
+    t = c.groupby(kol, observed=True)["churn_flag"].agg(n="count", stopa="mean")
+    t["stopa"] = (t["stopa"] * 100).round(1)
+    print(t, "\n")
+
+c.groupby("churn")[["godine", "staz_meseci", "mesecni_racun_rsd", "potrosnja_gb",
+                    "broj_reklamacija", "ocena_zadovoljstva"]].median()
+<span class="todo"># TODO: koja tri segmenta imaju najveću stopu, a da imaju bar 100 korisnika?</span></code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">Ukupna stopa churn-a: 22.2%
+tip_paketa    Prepaid 29.6%   Biznis 20.9%   Postpaid 16.9%
+staz_grupa    do 1 god 32.7%  1–3 god 20.6%  3–6 god 22.9%  6+ god 11.7%
+pol           M 21.4%  Ž 22.3%   (nema razlike)
+medijane      Da: staž 21, račun ~1900, reklamacije 1, ocena 3
+              Ne: staž 31, račun ~2500, reklamacije 0, ocena 4</pre></div></details><details class="hint"><summary>Nagoveštaj</summary><div><p>Kanal „Nepoznato“ ima najvišu stopu (33%) — ali na 12 korisnika. To je primer za izveštaj: nalaz koji izgleda zanimljivo, a ne sme da se prijavi bez ograde.</p></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z3-3">
+  <header><h3><small>Zadatak 3.3</small>Korelacije</h3><div class="eta">≈ 1 h</div></header>
+  
+<p>Izračunaj korelacionu matricu numeričkih kolona i <code>churn_flag</code>. Izaberi Pearson ili Spearman i obrazloži izbor na osnovu asimetrije iz zadatka 3.1. Prikaži matricu kao heatmap i izdvoj korelacije sa churn-om u sortiranu listu.</p>
+<pre class="code"><code>num = c[NUM + ["churn_flag"]].astype(float)
+kor = num.corr(method="spearman")      <span class="todo"># TODO: obrazloži zašto ne pearson</span>
+plt.figure(figsize=(8, 6.5))
+sns.heatmap(kor, annot=True, fmt=".2f", cmap="RdYlGn", center=0)
+print(kor["churn_flag"].drop("churn_flag").sort_values())
+<span class="todo"># TODO: uporedi sa Pearson-om — gde se najviše razlikuju i zašto?</span></code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">ocena_zadovoljstva   -0.31
+staz_meseci          -0.14
+mesecni_racun_rsd    -0.10
+godine / broj_sms / minuti / potrosnja_gb   ≈ 0
+broj_reklamacija     +0.30</pre></div></details><details class="hint"><summary>Nagoveštaj</summary><div><p>Korelacija od 0,3 je „slaba“ po udžbeniku, a u praksi kod churn-a je to jak signal. Naučiti kada je 0,3 mnogo a kada malo — to je razlika između statistike i analitike.</p></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z3-4">
+  <header><h3><small>Zadatak 3.4</small>Tri hipoteze</h3><div class="eta">≈ 2 h</div></header>
+  
+<p>Formuliši i testiraj tri hipoteze. Za svaku: H0 i H1, izabrani test i zašto baš taj, rezultat, i zaključak na jeziku menadžmenta. Pre testova proveri normalnost bar jedne kolone (Shapiro–Wilk ili Q-Q plot) da opravdaš izbor parametarskog ili neparametarskog testa.</p>
+<pre class="code"><code>from scipy import stats
+
+<span class="c"># H1: stopa churn-a zavisi od tipa paketa  → hi-kvadrat test nezavisnosti</span>
+kt = pd.crosstab(c["tip_paketa"], c["churn"])
+chi2, p, dof, _ = stats.chi2_contingency(kt)
+print(f"H1  χ²={chi2:.2f}  df={dof}  p={p:.2g}")
+
+<span class="c"># H2: korisnici koji odlaze imaju kraći staž  → Mann–Whitney U (staž nije normalan)</span>
+a = c.loc[c.churn == "Da", "staz_meseci"]
+b = c.loc[c.churn == "Ne", "staz_meseci"]
+u, p = stats.mannwhitneyu(a, b, alternative="less")
+print(f"H2  medijane {a.median():.0f} vs {b.median():.0f}  p={p:.2g}")
+
+<span class="c"># H3: TODO — broj reklamacija je veći kod churn korisnika (koji test? koja alternativa?)</span>
+<span class="c"># Normalnost:</span>
+w, pn = stats.shapiro(c["mesecni_racun_rsd"].sample(500, random_state=1))
+print(f"Shapiro–Wilk W={w:.3f} p={pn:.2g}")</code></pre><details class="expect"><summary>Očekivani rezultat</summary><div><pre class="console">H1  χ²≈23   df=2   p &lt; 0.001   → churn zavisi od tipa paketa
+H2  medijane 21 vs 31 meseci   p &lt; 0.001   → korisnici koji odlaze imaju kraći staž
+H3  sredine ~1.4 vs ~0.6 reklamacija   p &lt; 0.001
+Shapiro–Wilk p &lt; 0.001 → račun nije normalno raspodeljen → neparametarski testovi</pre></div></details><details class="hint"><summary>Nagoveštaj</summary><div><p>p &lt; 0,001 ne znači „velika razlika“, nego „malo verovatno da je slučajna“. Veličinu efekta izražavaš brojem: 32,7% naspram 11,7%, ili 21 naspram 31 mesec. Oba idu u izveštaj — p-vrednost u fusnotu, efekat u naslov.</p></div></details>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z3-5">
+  <header><h3><small>Zadatak 3.5</small>Vizuelizacije za izveštaj</h3><div class="eta">≈ 1,5 h</div></header>
+  
+<p>Od svih grafikona koje si napravio/la, izaberi četiri do šest za izveštaj. Svaki mora da položi test: ima naslov koji je rečenica (ne „Grafikon 3“), ose sa nazivom i jedinicom, čitljive oznake, i može da se razume bez teksta pored njega. Sačuvaj ih u <code>rezultati/grafikoni/</code> u PNG formatu, 130+ dpi.</p>
+<ul>
+<li>Stopa churn-a po tipu paketa i po grupi staža (dva horizontalna bar charta)</li>
+<li>Stopa churn-a po oceni zadovoljstva i po broju reklamacija</li>
+<li>Histogram mesečnog računa sa sredinom i medijanom — ilustracija zašto medijana</li>
+<li>Boxplot računa po tipu paketa i churn statusu</li>
+<li>Jedan grafikon po tvom izboru koji pokazuje nešto što nismo tražili</li>
+</ul>
+<pre class="code"><code>fig, ax = plt.subplots(1, 2, figsize=(12, 4.2))
+t = (c.groupby("tip_paketa", observed=True)["churn_flag"].mean() * 100).sort_values()
+t.plot.barh(ax=ax[0], color="#123C3A")
+ax[0].set_title("Prepaid korisnici odlaze skoro dvostruko češće od postpaid")
+ax[0].set_xlabel("Stopa churn-a (%)")
+<span class="todo"># TODO: drugi panel — staz_grupa</span>
+plt.tight_layout()
+plt.savefig("rezultati/grafikoni/01_churn_paket_staz.png", dpi=130)</code></pre>
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<section class="task" id="z3-6">
+  <header><h3><small>Zadatak 3.6</small>Izveštaj i prezentacija</h3><div class="eta">≈ 3 h</div></header>
+  
+<p>Izveštaj od 3–5 strana (PDF ili Word), namenjen menadžmentu koji ima pet minuta. Struktura:</p>
+<ol>
+<li><strong>Rezime</strong> (pola strane) — tri do pet nalaza u brojkama i jedna preporuka. Ovo se piše poslednje, a čita prvo.</li>
+<li><strong>Podaci i priprema</strong> — šta smo dobili, šta je bilo pogrešno (tabela klasa grešaka sa brojem), šta smo uradili. Pre/posle tabela mera.</li>
+<li><strong>Deskriptivna statistika</strong> — ključne mere, uz objašnjenje zašto medijana, jedan histogram.</li>
+<li><strong>Nalazi</strong> — segmentacija, korelacije, tri hipoteze. Svaki nalaz: grafikon + dve rečenice.</li>
+<li><strong>Preporuke</strong> — šta bi tim za zadržavanje korisnika mogao da uradi sutra, na osnovu nalaza.</li>
+<li><strong>Ograničenja</strong> — šta ova analiza ne može da kaže (korelacija nije uzrok; 96 nepoznatih ocena; samo 12 meseci).</li>
+</ol>
+<p>Prezentacija: najviše 8 slajdova, 10 minuta, pa 10 minuta pitanja. Mentor postavlja pitanja kao da je direktor sektora.</p>
+<div class="note"><strong>Test za svaku rečenicu u izveštaju</strong>Da li bi je razumeo neko ko ne zna šta je IQR? Ako ne — prepravi je ili je premesti u prilog.</div>
+
+  <label class="done-toggle"><input type="checkbox"> Urađeno</label>
+</section>
+<div class="checkpoint"><span class="stamp">Kontrolna tačka 3, finalna</span>
+<h2>Šta predaješ</h2>
+<ul>
+<li>Tri notebooka koja se izvršavaju od početka do kraja: <code>01_profilisanje</code>, <code>02_ciscenje</code>, <code>03_analiza</code></li>
+<li><code>korisnici_clean.csv</code>, <code>dnevnik_ciscenja.md</code>, <code>rezultati/</code> sa tabelama mera i grafikonima</li>
+<li>Izveštaj (3–5 strana) i prezentacija (do 8 slajdova)</li>
+</ul>
+<p>Ocenjuje se po rubrici sa početne strane. Ako si pronašao/la klasu greške koja nije pomenuta ni u jednom modulu — reci to na prezentaciji, nosi bonus.</p>
+</div>
+    <div class="pager"><a class="prev" href="modul2.html">← Modul 2</a><a href="index.html">Rubrika →</a></div>
+  </main>
+</div>
+<script>
+(function(){
+  var key = 'stat-zadatak-' + document.body.dataset.page;
+  var store = {};
+  try { store = JSON.parse(localStorage.getItem(key) || '{}'); } catch(e) { store = {}; }
+  var boxes = document.querySelectorAll('.done-toggle input');
+  function paint(){
+    var done = 0;
+    boxes.forEach(function(b){
+      var t = b.closest('.task'); var id = t.id;
+      b.checked = !!store[id];
+      t.classList.toggle('is-done', b.checked);
+      var link = document.querySelector('.rail .tasks a[href="#'+id+'"]');
+      if (link) link.classList.toggle('done', b.checked);
+      if (b.checked) done++;
+    });
+    var p = document.querySelector('.progress');
+    if (p && boxes.length){
+      p.querySelector('.bar i').style.width = Math.round(100*done/boxes.length) + '%';
+      p.querySelector('.count').textContent = done + ' / ' + boxes.length;
+    }
+  }
+  boxes.forEach(function(b){
+    b.addEventListener('change', function(){
+      store[b.closest('.task').id] = b.checked;
+      try { localStorage.setItem(key, JSON.stringify(store)); } catch(e) {}
+      paint();
+    });
+  });
+  paint();
+})();
+</script>
+</body>
+</html>
