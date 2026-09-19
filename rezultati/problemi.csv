@@ -27,3 +27,7 @@ pol,nedosledne_kategorije,30,"{'m': 8, 'Z': 4, 'muski': 4, 'M ': 4, 'Muški': 4,
 tip_paketa,nedosledne_kategorije,30,"{'Post-paid': 7, 'POSTPAID': 6, 'Pre-paid': 4, 'BIZNIS': 4, 'postpaid': 4, 'biznis': 2, 'PREPAID': 1, 'Business': 1, 'prepaid': 1}"
 kanal_prodaje,nedosledne_kategorije,24,"{' Poslovnica ': 7, ' Online ': 5, 'poslovnica': 4, 'online': 3, 'call centar': 2, 'partner': 1, ' Call centar ': 1, ' Partner ': 1}"
 churn,nedosledne_kategorije,40,"{'0': 13, 'NE': 8, 'Ne ': 6, '1': 3, 'DA': 3, 'ne': 3, 'No': 2, 'Da ': 1, 'Yes': 1}"
+godine,negativne_vrednosti,3,"[-26.0, -19.0, -21.0]"
+staz_meseci,negativne_vrednosti,5,"[-4, -9, -9, -3, -3]"
+minuti_poziva,negativne_vrednosti,4,"[-139, -98, -62, -14]"
+datum_aktivacije,van_opsega,6,"[Timestamp('2027-09-02 00:00:00'), Timestamp('2027-11-10 00:00:00'), Timestamp('2027-06-27 00:00:00'), Timestamp('2027-03-10 00:00:00'), Timestamp('2027-12-25 00:00:00')]"
