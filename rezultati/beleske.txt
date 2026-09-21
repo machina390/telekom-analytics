@@ -1,47 +1,71 @@
-for col in data.columns:
-    cond=data[col].isna()
-    count = cond.sum()
-    if count>0:
-        missing_vals[col]={"broj":cond.sum(),
-                           "primeri":data.loc[cond,col].head().tolist()}
+{'m': 8,
+'Z': 4,
+'muski': 4,
+'M ': 4,
+'Muški': 4,
+'ž': 3,
+'zenski': 2,
+'Ženski': 1}
+for cat in categories:
+    data[cat]=data[cat].astype("string").str.strip()
 
-issues.append(missing_vals)
+# Fala fajlu `problemi.csv` :)
+map_region = {
+    "beograd":"Beograd",
+    "bg":"Beograd",
+    "vojvodina":"Vojvodina",
+    "šumadija i zapadna srbija":"Šumadija i Zapadna Srbija",
+    "sumadija i zapadna srbija":"Šumadija i Zapadna Srbija",
+    "južna i istočna srbija":"Južna i Istočna Srbija",
+    "juzna i istocna srbija":"Južna i Istočna Srbija"
+}
 
-non_num_vals=dict()
-non_num_vals["klasa"]="nenumericke_u_numerickim"
+data["region"] = data["region"].str.lower().map(map_region)
 
-for col in ["mesecni_racun_rsd","potrosnja_gb"]:
-    non_num= pd.to_numeric(data[col],errors="coerce").isna() & data[col].notna()
-    non_num_vals[col]={
-        "broj":non_num.sum(),
-        "primeri":data.loc[non_num,col].head().tolist()
-    }
+map_pol={
+    'm': 'M',
+    'z': 'Ž',
+    'muski': 'M',
+    'muški': 'M',
+    'ž': 'Ž',
+    'zenski': 'Ž',
+    'ženski': 'Ž'
+}
 
-issues.append(non_num_vals)
+data["pol"]=data["pol"].str.lower().map(map_pol)
 
-duplicates=dict()
-duplicates["klasa"]="duplikati_cisti"
+map_chrun={
+    "yes":"Da",
+    "1":"Da",
+    "no":"Ne",
+    "0":"Ne"
+}
+data["churn"]=data["churn"].str.lower().map(map_chrun)
 
-for col in data.columns:
-    cond = data[col].duplicated()
-    count = cond.sum()
-    example = data.loc[cond,col].head().unique().tolist()
+map_tip={
+    'post-paid':'Postpaid',
+    'postpaid':'Postpaid',
+    'pre-paid':'Prepaid',
+    'biznis':'Biznis',
+    'business':'Biznis',
+    'prepaid':'Prepaid'
+}
 
-    duplicates[col]={"broj":count,"primer":example}
+data["tip_paketa"]=data["tip_paketa"].str.lower().map(map_tip)
 
-issues.append(duplicates)
+map_kanal={
+    'poslovnica':'Poslovnica',
+    'online':'Online',
+    'call centar':'Call centar;',
+    'partner':'Partner'
+}
 
-cat_issues=dict()
-cat_issues["klasa"]="nedosledne_kategorije"
+data["kanal_prodaje"]=data["kanal_prodaje"].str.lower().map(map_kanal)
+
+allowed = dict(zip(data_dict["kolona"], data_dict["dozvoljene vrednosti"].str.split("; ")))
+
+categories=["region","pol", "tip_paketa", "kanal_prodaje", "churn"]
 
 for cat in categories:
-
-    cat_issues[cat]=f"{cat} {data[cat].value_counts().to_dict()}"
-
-issues.append(cat_issues)
-
-#for issue in issues:
- #   print(f"{issue}:{issues[issue]}\n")
-
-issues_report = pd.DataFrame(issues).T
-display(issues_report)
+    assert data[cat].dropna().isin(allowed[cat]).all(), cat
+    print(cat,sorted(data[cat].dropna().unique()))
