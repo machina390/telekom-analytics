@@ -69,3 +69,22 @@ categories=["region","pol", "tip_paketa", "kanal_prodaje", "churn"]
 for cat in categories:
     assert data[cat].dropna().isin(allowed[cat]).all(), cat
     print(cat,sorted(data[cat].dropna().unique()))
+
+
+------
+
+Zeljeni testovi:
+
+da li postoji veza izmedju `churn` i kanala prodaje ? da li kanal prodaje utice na to da ce nam neko otici posle
+godinu dana ?
+
+
+region i kanal prodaje
+
+pol i minuti poziva
+
+starosna_grupa i tip paketa
+
++ stopa churna da li zavisi od tipa paketa ?
++ korisnici sa manjim stazom cesce odlaze ?
++
