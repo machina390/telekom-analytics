@@ -79,11 +79,6 @@ da li postoji veza izmedju `churn` i kanala prodaje ? da li kanal prodaje utice 
 godinu dana ?
 
 
-region i kanal prodaje
-
-pol i minuti poziva
-
-starosna_grupa i tip paketa
 
 + stopa churna da li zavisi od tipa paketa ?
 + korisnici sa manjim stazom cesce odlaze ?

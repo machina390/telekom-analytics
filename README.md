@@ -1,0 +1,3 @@
+# Some experiences 
+
+- In case of `mesecni_racun_rsd` (eng. monthly bill), when removing the row with cca 70 000 Serbian dinars (cca 600 USD), the metrics didn't change much. Only the boxplot was affected since it displays the outliers. The distribution of `broj_sms` (eng. number of SMS) got sightly below normal (not too far, but still not enough to pass `Shapiro-Wilco`) and distribution of `potrosnja_gb` (eng. data consumption) didn't even change ! 

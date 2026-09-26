@@ -5,7 +5,7 @@ K00536,Beograd,Ž,42,Postpaid,5.0,1685.0,10.6,175.0,26.0,0,Online,2026-03-27,4.0
 K00571,Šumadija i Zapadna Srbija,M,46,Postpaid,12.0,0.2235,4.7,221.0,39.0,1,Poslovnica,2025-08-09,3.0,Ne,False,False,False,True,45-59,0,Da,2025.0,0.0475531914893617,Da,go 1 god
 K00677,Vojvodina,M,33,Prepaid,1.0,909.0,6.5,461.0,39.0,1,Online,2026-07-24,,Ne,False,False,False,False,30-44,0,Da,2026.0,139.84615384615384,Da,go 1 god
 K00620,Beograd,M,34,Postpaid,55.0,2389.0,11.2,177.0,31.0,0,Poslovnica,2022-01-06,4.0,Da,False,False,False,True,30-44,1,Ne,2022.0,213.30357142857144,Da,3-6 god
-K01075,Beograd,Ž,23,Postpaid,57.0,2387.0,7.7,289.0,32.0,1,Online,2021-11-08,3.0,Ne,False,False,False,True,18-29,0,Da,2021.0,310.0,Da,3-6 god
+K01075,Beograd,Ž,23,Postpaid,57.0,2383.0,7.7,289.0,32.0,1,Online,2021-11-08,3.0,Ne,False,False,False,True,18-29,0,Da,2021.0,309.4805194805195,Da,3-6 god
 K00434,Južna i Istočna Srbija,M,34,Postpaid,34.0,3565.0,10.1,486.0,51.0,0,Online,2023-10-26,3.0,Ne,False,False,False,True,30-44,0,Ne,2023.0,352.970297029703,Da,1-3 god
 K01107,Beograd,Ž,66,Postpaid,52.0,350.0,2.6,343.0,25.0,0,Online,2022-04-27,5.0,Ne,False,False,False,True,60+,0,Ne,2022.0,134.6153846153846,Da,3-6 god
 K01188,Šumadija i Zapadna Srbija,M,53,Postpaid,33.0,2770.0,1.8,276.0,34.0,0,Poslovnica,2023-11-29,5.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,1538.888888888889,Da,1-3 god
@@ -16,7 +16,7 @@ K00228,Južna i Istočna Srbija,Ž,63,Postpaid,72.0,2965.0,6.8,118.0,42.0,1,Call
 K00583,Beograd,M,18,Postpaid,16.0,4560.0,18.7,445.0,46.0,0,Online,2025-04-14,5.0,Ne,False,False,False,True,18-29,0,Ne,2025.0,243.85026737967917,Da,1-3 god
 K00809,Južna i Istočna Srbija,M,32,Postpaid,153.0,1688.0,7.3,209.0,35.0,0,Online,2013-11-21,4.0,Ne,False,False,False,True,30-44,0,Ne,2013.0,231.23287671232876,Da,6+ god
 K01129,Šumadija i Zapadna Srbija,M,29,Biznis,100.0,6454.0,11.7,292.0,38.0,1,Online,2018-04-21,5.0,Ne,False,False,False,True,18-29,0,Da,2018.0,551.6239316239316,Da,6+ god
-K01035,Južna i Istočna Srbija,M,50,Prepaid,1.0,2482.5,2.2,311.0,46.0,2,Call centar,2026-07-12,3.0,Da,False,False,False,True,45-59,1,Da,2026.0,1128.4090909090908,Da,go 1 god
+K01035,Južna i Istočna Srbija,M,50,Prepaid,1.0,2478.0,2.2,311.0,46.0,2,Call centar,2026-07-12,3.0,Da,False,False,False,True,45-59,1,Da,2026.0,1126.3636363636363,Da,go 1 god
 K01197,Vojvodina,M,34,Postpaid,54.0,1102.0,8.7,315.0,40.0,1,Poslovnica,2022-03-01,3.0,Ne,False,False,False,True,30-44,0,Da,2022.0,126.66666666666667,Da,3-6 god
 K00612,Beograd,Ž,55,Prepaid,31.0,574.0,9.4,169.0,32.0,3,Online,2024-01-17,2.0,Ne,False,False,False,True,45-59,0,Da,2024.0,61.06382978723404,Da,1-3 god
 K00631,Beograd,M,56,Prepaid,80.0,1537.0,6.5,393.0,34.0,1,Call centar,2019-12-20,4.0,Ne,False,False,False,True,45-59,0,Da,2019.0,236.46153846153845,Da,6+ god
@@ -37,14 +37,14 @@ K00607,Južna i Istočna Srbija,M,61,Postpaid,36.0,2066.0,5.2,105.0,38.0,0,Onlin
 K00700,Šumadija i Zapadna Srbija,Ž,73,Postpaid,171.0,3303.0,1.3,376.0,29.0,0,Online,2012-06-01,4.0,Ne,False,False,False,True,60+,0,Ne,2012.0,2540.7692307692305,Da,6+ god
 K00469,Beograd,M,53,Biznis,95.0,4465.0,5.8,495.0,34.0,2,Online,2018-09-15,2.0,Ne,False,False,False,True,45-59,0,Da,2018.0,769.8275862068966,Da,6+ god
 K00647,Južna i Istočna Srbija,M,55,Postpaid,15.0,1961.0,2.3,263.0,33.0,0,Online,2025-05-30,5.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,852.608695652174,Da,1-3 god
-K00120,Vojvodina,Ž,45,Postpaid,46.0,4164.0,6.4,307.0,28.0,0,Partner,2022-10-26,5.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,650.625,Da,3-6 god
+K00120,Vojvodina,Ž,45,Postpaid,46.0,4164.0,6.3,307.0,28.0,0,Partner,2022-10-26,5.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,660.952380952381,Da,3-6 god
 K00572,Južna i Istočna Srbija,M,37,Postpaid,31.0,2949.0,13.8,307.0,29.0,0,Poslovnica,2024-02-01,4.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,213.69565217391303,Da,1-3 god
 K00874,Beograd,M,51,Biznis,40.0,7413.0,5.7,298.0,33.0,0,Online,2023-04-23,,Ne,True,False,False,False,45-59,0,Ne,2023.0,1300.5263157894738,Da,3-6 god
 K01103,Beograd,Ž,27,Prepaid,11.0,1113.0,11.4,325.0,44.0,0,Online,2025-09-07,5.0,Ne,False,False,False,True,18-29,0,Ne,2025.0,97.63157894736842,Da,go 1 god
 K00049,Šumadija i Zapadna Srbija,M,38,Postpaid,27.0,1477.0,5.2,337.0,32.0,1,Poslovnica,2024-05-29,4.0,Ne,False,False,False,True,30-44,0,Da,2024.0,284.03846153846155,Da,1-3 god
 K00306,Beograd,M,30,Prepaid,29.0,1376.0,7.6,367.0,46.0,1,Poslovnica,2024-03-18,2.0,Ne,False,False,False,True,30-44,0,Da,2024.0,181.05263157894737,Da,1-3 god
 K00486,Južna i Istočna Srbija,Ž,45,Biznis,66.0,4641.0,8.7,255.0,35.0,5,Online,2021-02-08,2.0,Da,False,False,False,True,45-59,1,Da,2021.0,533.448275862069,Da,3-6 god
-K00806,Vojvodina,Ž,58,Prepaid,34.0,2380.0,4.0,334.0,29.0,1,Poslovnica,2023-10-14,3.0,Ne,False,False,False,True,45-59,0,Da,2023.0,595.0,Da,1-3 god
+K00806,Vojvodina,Ž,58,Prepaid,34.0,2361.0,4.0,334.0,29.0,1,Poslovnica,2023-10-14,3.0,Ne,False,False,False,True,45-59,0,Da,2023.0,590.25,Da,1-3 god
 K00531,Šumadija i Zapadna Srbija,M,42,Postpaid,15.0,2764.0,9.6,215.0,31.0,0,Poslovnica,2025-05-26,4.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,287.9166666666667,Da,1-3 god
 K00854,Beograd,M,38,Postpaid,30.0,3583.0,10.3,214.0,37.0,1,Call centar,2024-02-16,3.0,Ne,False,False,False,True,30-44,0,Da,2024.0,347.8640776699029,Da,1-3 god
 K00898,Šumadija i Zapadna Srbija,M,31,Postpaid,18.0,3163.0,23.8,290.0,38.0,2,Online,2025-03-02,3.0,Ne,False,True,False,True,30-44,0,Da,2025.0,132.89915966386553,Da,1-3 god
@@ -86,7 +86,7 @@ K00491,Vojvodina,M,49,Postpaid,109.0,2550.0,5.3,367.0,39.0,2,Poslovnica,2017-07-
 K00539,Šumadija i Zapadna Srbija,M,38,Biznis,25.0,3420.0,9.8,126.0,44.0,0,Online,2024-07-10,3.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,348.97959183673464,Da,1-3 god
 K00808,Južna i Istočna Srbija,Ž,44,Postpaid,56.0,1992.0,16.1,121.0,37.0,2,Poslovnica,2021-12-15,2.0,Da,False,False,False,True,30-44,1,Da,2021.0,123.72670807453414,Da,3-6 god
 K01182,Šumadija i Zapadna Srbija,Ž,43,Postpaid,68.0,2342.0,2.4,15.0,32.0,0,Online,2021-01-03,4.0,Ne,False,False,True,True,30-44,0,Ne,2021.0,975.8333333333334,Da,3-6 god
-K00199,Beograd,Ž,60,Prepaid,8.0,2387.0,1.1,671.0,32.0,0,Poslovnica,2025-12-20,4.0,Da,False,False,False,True,60+,1,Ne,2025.0,2170.0,Da,go 1 god
+K00199,Beograd,Ž,60,Prepaid,8.0,2383.0,1.1,671.0,32.0,0,Poslovnica,2025-12-20,4.0,Da,False,False,False,True,60+,1,Ne,2025.0,2166.363636363636,Da,go 1 god
 K00133,Šumadija i Zapadna Srbija,Ž,32,Postpaid,4.0,3170.0,24.7,50.0,35.0,1,Partner,2026-04-28,2.0,Ne,False,True,False,True,30-44,0,Da,2026.0,128.34008097165992,Da,go 1 god
 K00285,Južna i Istočna Srbija,M,49,Postpaid,47.0,1795.0,8.0,165.0,38.0,1,Online,2022-09-07,4.0,Ne,False,False,False,True,45-59,0,Da,2022.0,224.375,Da,3-6 god
 K00755,Beograd,M,34,Prepaid,66.0,920.0,14.7,165.0,37.0,1,Poslovnica,2021-02-21,5.0,Ne,False,False,False,True,30-44,0,Da,2021.0,62.585034013605444,Da,3-6 god
@@ -107,13 +107,12 @@ K00063,Vojvodina,M,43,Postpaid,12.0,3096.0,1.3,27.0,41.0,0,Poslovnica,2025-08-31
 K01003,Šumadija i Zapadna Srbija,M,40,Prepaid,53.0,837.0,10.5,140.0,33.0,1,Poslovnica,2022-03-31,4.0,Ne,False,False,False,True,30-44,0,Da,2022.0,79.71428571428571,Da,3-6 god
 K00353,Beograd,M,47,Postpaid,52.0,2928.0,7.6,145.0,45.0,1,Poslovnica,2022-04-23,5.0,Ne,False,False,False,True,45-59,0,Da,2022.0,385.2631578947369,Da,3-6 god
 K01128,Južna i Istočna Srbija,Ž,67,Postpaid,115.0,2533.0,1.4,94.0,39.0,1,Poslovnica,2017-01-12,3.0,Ne,False,False,False,True,60+,0,Da,2017.0,1809.2857142857144,Da,6+ god
-K00318,Vojvodina,M,47,Postpaid,15.0,40630.0,9.7,430.0,36.0,2,Online,2025-05-19,3.0,Ne,True,False,False,True,45-59,0,Da,2025.0,4188.659793814433,Da,1-3 god
-K00153,Vojvodina,M,49,Postpaid,115.0,2380.0,6.7,233.0,53.0,1,Poslovnica,2017-01-09,4.0,Ne,False,False,False,True,45-59,0,Da,2017.0,355.2238805970149,Da,6+ god
+K00153,Vojvodina,M,49,Postpaid,115.0,2361.0,6.7,233.0,53.0,1,Poslovnica,2017-01-09,4.0,Ne,False,False,False,True,45-59,0,Da,2017.0,352.3880597014925,Da,6+ god
 K00781,Šumadija i Zapadna Srbija,Ž,32,Biznis,18.0,7137.0,16.9,183.0,48.0,0,Call centar,2025-02-07,,Ne,True,False,False,False,30-44,0,Ne,2025.0,422.3076923076923,Da,1-3 god
 K00097,Vojvodina,M,49,Postpaid,43.0,3881.0,9.7,221.0,42.0,0,Poslovnica,2023-01-16,3.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,400.1030927835052,Da,3-6 god
 K00608,Beograd,M,53,Postpaid,6.0,2410.0,7.7,90.0,37.0,1,Poslovnica,2026-02-18,4.0,Ne,False,False,False,True,45-59,0,Da,2026.0,312.987012987013,Da,go 1 god
 K01077,Vojvodina,M,33,Postpaid,38.0,3488.0,5.7,189.0,40.0,1,Online,2023-06-17,3.0,Da,False,False,False,True,30-44,1,Da,2023.0,611.9298245614035,Da,3-6 god
-K00627,Beograd,Ž,61,Postpaid,162.0,3327.0,6.4,187.0,45.0,3,Call centar,2013-02-28,2.0,Da,False,False,False,True,60+,1,Da,2013.0,519.84375,Da,6+ god
+K00627,Beograd,Ž,61,Postpaid,162.0,3327.0,6.3,187.0,45.0,3,Call centar,2013-02-28,2.0,Da,False,False,False,True,60+,1,Da,2013.0,528.0952380952381,Da,6+ god
 K00102,Beograd,Ž,18,Prepaid,3.0,1377.0,12.5,114.0,47.0,0,Poslovnica,2026-05-20,5.0,Ne,False,False,False,True,18-29,0,Ne,2026.0,110.16,Da,go 1 god
 K01045,Južna i Istočna Srbija,Ž,59,Postpaid,29.0,3526.0,1.9,425.0,31.0,1,Poslovnica,2024-03-16,5.0,Ne,False,False,False,True,45-59,0,Da,2024.0,1855.7894736842106,Da,1-3 god
 K01164,Beograd,Ž,24,Postpaid,98.0,4806.0,15.7,151.0,33.0,3,Online,2018-06-19,3.0,Ne,False,False,False,True,18-29,0,Da,2018.0,306.1146496815287,Da,6+ god
@@ -130,7 +129,6 @@ K00350,Šumadija i Zapadna Srbija,M,28,Postpaid,95.0,2136.0,21.6,328.0,36.0,1,Po
 K01018,Beograd,Ž,42,Postpaid,72.0,2697.0,12.7,314.0,31.0,3,Poslovnica,2020-09-02,3.0,Ne,False,False,False,True,30-44,0,Da,2020.0,212.36220472440945,Da,3-6 god
 K00905,Beograd,M,50,Biznis,166.0,5793.0,2.8,306.0,39.0,0,Online,2012-10-31,3.0,Ne,False,False,False,True,45-59,0,Ne,2012.0,2068.9285714285716,Da,6+ god
 K00233,Južna i Istočna Srbija,Ž,49,Prepaid,11.0,539.0,2.8,170.0,31.0,0,Online,2025-09-13,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,192.5,Da,go 1 god
-K00388,Južna i Istočna Srbija,M,23,Postpaid,38.0,32910.0,8.6,383.0,36.0,0,Online,2023-07-03,5.0,Ne,True,False,False,True,18-29,0,Ne,2023.0,3826.744186046512,Da,3-6 god
 K00376,Beograd,M,27,Postpaid,27.0,3473.0,20.5,88.0,32.0,0,Online,2024-05-15,5.0,Ne,False,False,False,True,18-29,0,Ne,2024.0,169.41463414634146,Da,1-3 god
 K00467,Vojvodina,M,54,Postpaid,67.0,1916.0,2.3,346.0,33.0,2,Online,2021-01-09,5.0,Ne,False,False,False,True,45-59,0,Da,2021.0,833.0434782608696,Da,3-6 god
 K00773,Vojvodina,M,44,Prepaid,1.0,1569.0,1.7,169.0,42.0,2,Online,2026-07-28,2.0,Da,False,False,False,True,30-44,1,Da,2026.0,922.9411764705883,Da,go 1 god
@@ -164,7 +162,7 @@ K00135,Beograd,M,18,Postpaid,148.0,2238.0,13.2,387.0,35.0,0,Online,2014-04-26,4.
 K00275,Vojvodina,Ž,59,Biznis,67.0,3564.0,4.6,269.0,32.0,1,Poslovnica,2021-01-18,3.0,Da,False,False,False,True,45-59,1,Da,2021.0,774.7826086956522,Da,3-6 god
 K00992,Južna i Istočna Srbija,Ž,31,Prepaid,50.0,803.0,9.4,297.0,53.0,1,Poslovnica,2022-06-14,3.0,Ne,False,False,False,True,30-44,0,Da,2022.0,85.42553191489361,Da,3-6 god
 K00274,Šumadija i Zapadna Srbija,M,20,Prepaid,22.0,1252.0,13.7,157.0,36.0,0,Online,2024-10-24,2.0,Da,False,False,False,True,18-29,1,Ne,2024.0,91.38686131386862,Da,1-3 god
-K00124,Beograd,Ž,31,Prepaid,58.0,2387.0,18.4,289.0,50.0,1,Poslovnica,2021-10-20,5.0,Da,False,False,False,True,30-44,1,Da,2021.0,129.72826086956522,Da,3-6 god
+K00124,Beograd,Ž,31,Prepaid,58.0,2383.0,18.4,289.0,50.0,1,Poslovnica,2021-10-20,5.0,Da,False,False,False,True,30-44,1,Da,2021.0,129.5108695652174,Da,3-6 god
 K00813,Južna i Istočna Srbija,M,34,Biznis,93.0,6298.0,11.6,434.0,49.0,2,Call centar,2018-11-15,3.0,Ne,False,False,False,True,30-44,0,Da,2018.0,542.9310344827586,Da,6+ god
 K00524,Vojvodina,M,57,Postpaid,23.0,2307.0,2.2,436.0,39.0,1,Poslovnica,2024-09-24,5.0,Ne,False,False,False,True,45-59,0,Da,2024.0,1048.6363636363635,Da,1-3 god
 K00305,Beograd,Ž,33,Prepaid,36.0,1226.0,13.3,348.0,45.0,0,Online,2023-08-14,3.0,Ne,False,False,False,True,30-44,0,Ne,2023.0,92.18045112781954,Da,1-3 god
@@ -191,7 +189,7 @@ K00840,Vojvodina,Ž,43,Biznis,112.0,6953.0,4.3,126.0,27.0,3,Call centar,2017-04-
 K00497,Vojvodina,Ž,18,Prepaid,5.0,1795.0,24.5,316.0,32.0,0,Online,2026-03-27,5.0,Ne,False,True,False,True,18-29,0,Ne,2026.0,73.26530612244898,Da,go 1 god
 K01062,Južna i Istočna Srbija,M,35,Postpaid,47.0,1767.0,10.5,72.0,37.0,1,Online,2022-09-09,4.0,Ne,False,False,False,True,30-44,0,Da,2022.0,168.28571428571428,Da,3-6 god
 K00746,Vojvodina,Ž,60,Prepaid,74.0,1800.0,3.1,253.0,40.0,1,Poslovnica,2020-06-20,4.0,Ne,False,False,False,True,60+,0,Da,2020.0,580.6451612903226,Da,6+ god
-K00716,Vojvodina,Ž,18,Prepaid,9.0,2380.0,13.6,146.0,34.0,0,Poslovnica,2025-11-30,5.0,Ne,False,False,False,True,18-29,0,Ne,2025.0,175.0,Da,go 1 god
+K00716,Vojvodina,Ž,18,Prepaid,9.0,2361.0,13.6,146.0,34.0,0,Poslovnica,2025-11-30,5.0,Ne,False,False,False,True,18-29,0,Ne,2025.0,173.60294117647058,Da,go 1 god
 K00611,Južna i Istočna Srbija,Ž,24,Biznis,117.0,3899.0,12.0,186.0,34.0,4,Call centar,2016-11-13,2.0,Da,False,False,False,True,18-29,1,Da,2016.0,324.9166666666667,Da,6+ god
 K00213,Beograd,M,39,Prepaid,1.0,1219.0,11.0,145.0,45.0,2,Online,2026-07-12,3.0,Da,False,False,False,True,30-44,1,Da,2026.0,110.81818181818181,Da,go 1 god
 K00391,Šumadija i Zapadna Srbija,Ž,34,Prepaid,25.0,904.0,4.1,298.0,33.0,0,Online,2024-07-26,,Da,False,False,False,False,30-44,1,Ne,2024.0,220.4878048780488,Da,1-3 god
@@ -208,11 +206,11 @@ K00542,Južna i Istočna Srbija,Ž,18,Prepaid,16.0,967.0,30.6,421.0,36.0,1,Onlin
 K00722,Šumadija i Zapadna Srbija,Ž,21,Prepaid,51.0,1791.0,18.6,296.0,23.0,0,Partner,2022-05-28,4.0,Ne,False,False,False,True,18-29,0,Ne,2022.0,96.29032258064515,Da,3-6 god
 K00530,Južna i Istočna Srbija,Ž,48,Postpaid,48.0,3355.0,3.0,315.0,48.0,1,Poslovnica,2022-09-17,3.0,Ne,False,False,False,True,45-59,0,Da,2022.0,1118.3333333333333,Da,3-6 god
 K00863,Beograd,Ž,24,Biznis,37.0,5719.0,15.0,187.0,38.0,0,Call centar,2023-07-19,3.0,Ne,False,False,False,True,18-29,0,Ne,2023.0,381.26666666666665,Da,3-6 god
-K00103,Vojvodina,Ž,50,Biznis,33.0,2380.0,3.6,259.0,34.0,4,Call centar,2023-11-16,3.0,Da,False,False,False,True,45-59,1,Da,2023.0,661.1111111111111,Da,1-3 god
+K00103,Vojvodina,Ž,50,Biznis,33.0,2361.0,3.6,259.0,34.0,4,Call centar,2023-11-16,3.0,Da,False,False,False,True,45-59,1,Da,2023.0,655.8333333333334,Da,1-3 god
 K00083,Vojvodina,Ž,47,Postpaid,34.0,4562.0,7.8,319.0,28.0,0,Poslovnica,2023-10-30,4.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,584.8717948717949,Da,1-3 god
 K01132,Južna i Istočna Srbija,Ž,30,Prepaid,17.0,1027.0,38.9,179.0,49.0,0,Online,2025-03-15,4.0,Ne,False,True,False,True,30-44,0,Ne,2025.0,26.401028277634964,Da,1-3 god
 K01176,Beograd,M,44,Biznis,172.0,4535.0,7.6,240.0,42.0,1,Online,2012-04-30,3.0,Ne,False,False,True,True,30-44,0,Da,2012.0,596.7105263157895,Da,6+ god
-K00311,Beograd,M,42,Postpaid,35.0,2387.0,6.2,295.0,51.0,4,Poslovnica,2023-09-28,3.0,Da,False,False,False,True,30-44,1,Da,2023.0,385.0,Da,1-3 god
+K00311,Beograd,M,42,Postpaid,35.0,2383.0,6.2,295.0,51.0,4,Poslovnica,2023-09-28,3.0,Da,False,False,False,True,30-44,1,Da,2023.0,384.3548387096774,Da,1-3 god
 K00408,Šumadija i Zapadna Srbija,Ž,58,Postpaid,7.0,3628.0,5.5,400.0,45.0,1,Poslovnica,2026-01-24,,Ne,False,False,False,False,45-59,0,Da,2026.0,659.6363636363636,Da,go 1 god
 K00442,Vojvodina,M,57,Postpaid,23.0,3318.0,1.0,58.0,41.0,2,Poslovnica,2024-09-23,4.0,Da,False,False,False,True,45-59,1,Da,2024.0,3318.0,Da,1-3 god
 K00440,Vojvodina,Ž,33,Prepaid,78.0,1271.0,4.8,0.0,31.0,0,Nepoznato,2020-02-22,4.0,Ne,False,False,False,True,30-44,0,Ne,2020.0,264.7916666666667,Da,6+ god
@@ -237,7 +235,7 @@ K00832,Vojvodina,M,51,Prepaid,6.0,981.0,6.5,301.0,44.0,1,Partner,2026-02-19,3.0,
 K00130,Vojvodina,M,37,Prepaid,87.0,921.0,8.7,468.0,38.0,0,Online,2019-06-04,4.0,Ne,False,False,False,True,30-44,0,Ne,2019.0,105.86206896551725,Da,6+ god
 K00593,Južna i Istočna Srbija,M,48,Prepaid,38.0,1526.0,6.5,133.0,43.0,0,Online,2023-06-30,4.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,234.76923076923077,Da,3-6 god
 K00626,Šumadija i Zapadna Srbija,Ž,49,Prepaid,25.0,1965.0,5.5,210.0,47.0,1,Poslovnica,2024-07-18,3.0,Da,False,False,False,True,45-59,1,Da,2024.0,357.27272727272725,Da,1-3 god
-K00981,Južna i Istočna Srbija,Ž,50,Postpaid,21.0,2482.5,2.5,340.0,42.0,0,Online,2024-12-02,3.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,993.0,Da,1-3 god
+K00981,Južna i Istočna Srbija,Ž,50,Postpaid,21.0,2478.0,2.5,340.0,42.0,0,Online,2024-12-02,3.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,991.2,Da,1-3 god
 K00161,Vojvodina,Ž,34,Postpaid,107.0,3812.0,10.1,157.0,32.0,1,Online,2017-09-14,4.0,Ne,False,False,False,True,30-44,0,Da,2017.0,377.4257425742574,Da,6+ god
 K00357,Beograd,M,47,Prepaid,20.0,1.207,5.3,287.0,41.0,0,Call centar,2024-12-29,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,0.2277358490566038,Da,1-3 god
 K00173,Vojvodina,M,48,Prepaid,55.0,1561.0,7.2,354.0,34.0,0,Poslovnica,2022-02-01,5.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,216.80555555555554,Da,3-6 god
@@ -259,7 +257,7 @@ K00125,Beograd,Ž,56,Prepaid,35.0,1000.0,2.5,208.0,33.0,2,Online,2023-09-20,3.0,
 K00003,Vojvodina,Ž,66,Postpaid,42.0,1329.0,1.1,261.0,39.0,0,Poslovnica,2023-02-06,5.0,Ne,False,False,False,True,60+,0,Ne,2023.0,1208.181818181818,Da,3-6 god
 K00452,Beograd,Ž,38,Postpaid,28.0,1865.0,26.7,122.0,37.0,0,Poslovnica,2024-04-12,3.0,Ne,False,True,False,True,30-44,0,Ne,2024.0,69.85018726591761,Da,1-3 god
 K00045,Beograd,Ž,40,Prepaid,16.0,741.0,6.0,418.0,32.0,0,Poslovnica,2025-04-07,4.0,Da,False,False,False,True,30-44,1,Ne,2025.0,123.5,Da,1-3 god
-K01004,Vojvodina,M,48,Prepaid,21.0,2380.0,6.0,0.0,45.0,0,Call centar,2024-11-29,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,396.6666666666667,Da,1-3 god
+K01004,Vojvodina,M,48,Prepaid,21.0,2361.0,6.0,0.0,45.0,0,Call centar,2024-11-29,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,393.5,Da,1-3 god
 K00092,Beograd,M,67,Prepaid,27.0,613.0,1.0,345.0,48.0,0,Partner,2024-05-25,5.0,Ne,False,False,False,True,60+,0,Ne,2024.0,613.0,Da,1-3 god
 K00112,Beograd,Ž,36,Biznis,106.0,4907.0,10.6,234.0,39.0,1,Poslovnica,2017-10-10,3.0,Ne,False,False,False,True,30-44,0,Da,2017.0,462.9245283018868,Da,6+ god
 K00212,Vojvodina,Ž,40,Prepaid,40.0,1430.0,3.2,459.0,35.0,0,Poslovnica,2023-04-30,4.0,Da,False,False,True,True,30-44,1,Ne,2023.0,446.875,Da,3-6 god
@@ -350,7 +348,7 @@ K00485,Nepoznato,M,29,Prepaid,116.0,654.0,10.9,353.0,37.0,1,Online,2017-01-04,3.
 K00892,Vojvodina,Ž,60,Postpaid,42.0,3695.0,3.0,157.0,29.0,1,Call centar,2023-02-14,2.0,Ne,False,False,False,True,60+,0,Da,2023.0,1231.6666666666667,Da,3-6 god
 K00017,Vojvodina,M,54,Postpaid,57.0,2733.0,5.3,124.0,32.0,0,Online,2021-11-30,5.0,Ne,False,False,False,True,45-59,0,Ne,2021.0,515.6603773584906,Da,3-6 god
 K01174,Vojvodina,Ž,40,Prepaid,50.0,1591.0,9.3,206.0,29.0,0,Call centar,2022-06-23,5.0,Ne,False,False,False,True,30-44,0,Ne,2022.0,171.0752688172043,Da,3-6 god
-K00733,Šumadija i Zapadna Srbija,Ž,43,Postpaid,68.0,2884.0,6.4,399.0,43.0,2,Online,2020-12-25,4.0,Da,False,False,False,True,30-44,1,Da,2020.0,450.625,Da,3-6 god
+K00733,Šumadija i Zapadna Srbija,Ž,43,Postpaid,68.0,2884.0,6.3,399.0,43.0,2,Online,2020-12-25,4.0,Da,False,False,False,True,30-44,1,Da,2020.0,457.77777777777777,Da,3-6 god
 K00209,Južna i Istočna Srbija,M,33,Prepaid,14.0,1245.0,11.5,158.0,34.0,0,Call centar,2025-07-01,4.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,108.26086956521739,Da,1-3 god
 K00113,Šumadija i Zapadna Srbija,Ž,57,Biznis,84.0,4980.0,2.3,107.0,36.0,0,Call centar,2019-09-02,4.0,Ne,False,False,False,True,45-59,0,Ne,2019.0,2165.217391304348,Da,6+ god
 K00001,Beograd,M,27,Prepaid,6.0,795.0,8.7,207.0,33.0,1,Online,2026-03-01,4.0,Ne,False,False,False,True,18-29,0,Da,2026.0,91.37931034482759,Da,go 1 god
@@ -361,14 +359,13 @@ K00954,Vojvodina,M,28,Prepaid,2.0,1055.0,5.4,240.0,34.0,0,Online,2026-06-27,,Ne,
 K00758,Južna i Istočna Srbija,Ž,43,Postpaid,31.0,2944.0,11.7,24.0,41.0,0,Online,2024-01-19,3.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,251.62393162393164,Da,1-3 god
 K00724,Južna i Istočna Srbija,M,37,Prepaid,1.0,2097.0,10.2,21.0,36.0,1,Online,2026-07-09,4.0,Ne,False,False,False,True,30-44,0,Da,2026.0,205.58823529411765,Da,go 1 god
 K01146,Šumadija i Zapadna Srbija,M,23,Biznis,38.0,5328.0,5.8,215.0,27.0,2,Online,2023-06-13,3.0,Ne,False,False,False,True,18-29,0,Da,2023.0,918.6206896551724,Da,3-6 god
-K00163,Beograd,M,18,Postpaid,6.0,3846.0,6.4,239.0,42.0,3,Online,2026-02-12,2.0,Ne,False,False,False,True,18-29,0,Da,2026.0,600.9375,Da,go 1 god
+K00163,Beograd,M,18,Postpaid,6.0,3846.0,6.3,239.0,42.0,3,Online,2026-02-12,2.0,Ne,False,False,False,True,18-29,0,Da,2026.0,610.4761904761905,Da,go 1 god
 K00574,Vojvodina,M,67,Postpaid,87.0,3788.0,1.0,279.0,42.0,0,Call centar,2019-05-12,4.0,Ne,False,False,False,True,60+,0,Ne,2019.0,3788.0,Da,6+ god
 K00659,Južna i Istočna Srbija,M,49,Biznis,129.0,2312.0,3.9,271.0,44.0,2,Poslovnica,2015-12-01,3.0,Ne,False,False,False,True,45-59,0,Da,2015.0,592.8205128205128,Da,6+ god
-K00630,Beograd,M,33,Postpaid,24.0,31070.0,12.4,207.0,41.0,0,Online,2024-08-27,4.0,Ne,True,False,False,True,30-44,0,Ne,2024.0,2505.6451612903224,Da,1-3 god
 K00152,Beograd,M,68,Prepaid,1.0,922.0,3.0,345.0,24.0,2,Partner,2026-07-20,2.0,Da,False,False,False,True,60+,1,Da,2026.0,307.3333333333333,Da,go 1 god
 K00993,Šumadija i Zapadna Srbija,Ž,43,Postpaid,16.0,4655.0,8.8,240.0,37.0,1,Online,2025-04-14,2.0,Da,False,False,True,True,30-44,1,Da,2025.0,528.9772727272726,Da,1-3 god
 K00646,Vojvodina,Ž,58,Prepaid,35.0,911.0,1.8,284.0,32.0,2,Poslovnica,2023-09-15,2.0,Da,False,False,False,True,45-59,1,Da,2023.0,506.1111111111111,Da,1-3 god
-K00585,Vojvodina,M,26,Prepaid,56.0,2380.0,14.5,399.0,48.0,0,Partner,2021-12-12,4.0,Ne,False,False,False,True,18-29,0,Ne,2021.0,164.13793103448276,Da,3-6 god
+K00585,Vojvodina,M,26,Prepaid,56.0,2361.0,14.5,399.0,48.0,0,Partner,2021-12-12,4.0,Ne,False,False,False,True,18-29,0,Ne,2021.0,162.82758620689654,Da,3-6 god
 K00484,Nepoznato,M,54,Biznis,9.0,7441.0,2.8,224.0,38.0,2,Online,2025-11-26,3.0,Da,True,False,False,True,45-59,1,Da,2025.0,2657.5,Da,go 1 god
 K01191,Vojvodina,Ž,56,Prepaid,2.0,1572.0,2.5,178.0,38.0,1,Partner,2026-06-24,3.0,Ne,False,False,False,True,45-59,0,Da,2026.0,628.8,Da,go 1 god
 K00427,Beograd,M,32,Postpaid,13.0,3765.0,17.7,0.0,43.0,2,Partner,2025-07-19,3.0,Ne,False,False,False,True,30-44,0,Da,2025.0,212.71186440677968,Da,1-3 god
@@ -381,7 +378,7 @@ K00987,Beograd,Ž,62,Postpaid,68.0,4386.0,3.5,512.0,41.0,0,Partner,2020-12-11,2.
 K01043,Vojvodina,M,75,Prepaid,16.0,1316.0,2.8,190.0,42.0,2,Poslovnica,2025-04-19,3.0,Da,False,False,False,True,60+,1,Da,2025.0,470.00000000000006,Da,1-3 god
 K01106,Šumadija i Zapadna Srbija,M,40,Prepaid,1.0,1981.0,2.3,307.0,30.0,1,Poslovnica,2026-07-13,4.0,Ne,False,False,True,True,30-44,0,Da,2026.0,861.304347826087,Da,go 1 god
 K00044,Šumadija i Zapadna Srbija,M,24,Postpaid,55.0,991.0,10.1,236.0,41.0,0,Poslovnica,2022-01-19,5.0,Da,False,False,False,True,18-29,1,Ne,2022.0,98.11881188118812,Da,3-6 god
-K01001,Šumadija i Zapadna Srbija,M,18,Prepaid,14.0,2148.5,7.2,104.0,37.0,1,Poslovnica,2025-06-11,2.0,Da,False,False,False,True,18-29,1,Da,2025.0,298.40277777777777,Da,1-3 god
+K01001,Šumadija i Zapadna Srbija,M,18,Prepaid,14.0,2141.0,7.2,104.0,37.0,1,Poslovnica,2025-06-11,2.0,Da,False,False,False,True,18-29,1,Da,2025.0,297.3611111111111,Da,1-3 god
 K00742,Vojvodina,M,23,Prepaid,18.0,776.0,6.0,89.0,45.0,1,Partner,2025-02-10,4.0,Ne,False,False,False,True,18-29,0,Da,2025.0,129.33333333333334,Da,1-3 god
 K00405,Beograd,M,43,Prepaid,37.0,1658.0,9.0,523.0,40.0,0,Online,2023-07-21,5.0,Ne,False,False,False,True,30-44,0,Ne,2023.0,184.22222222222223,Da,3-6 god
 K00263,Vojvodina,Ž,51,Prepaid,66.0,1004.0,7.5,485.0,35.0,0,Poslovnica,2021-03-02,4.0,Ne,False,False,False,True,45-59,0,Ne,2021.0,133.86666666666667,Da,3-6 god
@@ -409,7 +406,6 @@ K01130,Vojvodina,M,64,Biznis,176.0,6957.0,3.0,252.0,48.0,1,Poslovnica,2012-01-03
 K00369,Južna i Istočna Srbija,Ž,31,Prepaid,16.0,912.0,9.5,240.0,43.0,0,Poslovnica,2025-04-11,5.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,96.0,Da,1-3 god
 K00842,Vojvodina,M,43,Postpaid,23.0,0.4562,2.4,179.0,37.0,0,Online,2024-09-14,3.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,0.19008333333333333,Da,1-3 god
 K00299,Vojvodina,M,36,Postpaid,79.0,3262.0,7.1,400.0,44.0,1,Partner,2020-01-28,3.0,Ne,False,False,False,True,30-44,0,Da,2020.0,459.4366197183099,Da,6+ god
-K00052,Vojvodina,M,35,Postpaid,35.0,29740.0,12.1,337.0,32.0,0,Online,2023-09-10,4.0,Ne,True,False,False,True,30-44,0,Ne,2023.0,2457.8512396694214,Da,1-3 god
 K00843,Beograd,M,39,Postpaid,5.0,3533.0,6.6,229.0,31.0,0,Online,2026-03-26,,Da,False,False,False,False,30-44,1,Ne,2026.0,535.3030303030304,Da,go 1 god
 K01090,Šumadija i Zapadna Srbija,Ž,32,Prepaid,93.0,1153.0,13.0,179.0,46.0,2,Online,2018-11-11,4.0,Da,False,False,False,True,30-44,1,Da,2018.0,88.6923076923077,Da,6+ god
 K00007,Južna i Istočna Srbija,M,42,Prepaid,8.0,1139.0,3.8,323.0,25.0,5,Poslovnica,2025-12-31,2.0,Da,False,False,False,True,30-44,1,Da,2025.0,299.7368421052632,Da,go 1 god
@@ -423,7 +419,7 @@ K00142,Vojvodina,M,31,Postpaid,16.0,5037.0,3.8,309.0,54.0,0,Online,2025-04-30,5.
 K00749,Vojvodina,Ž,51,Biznis,17.0,5984.0,6.5,231.0,37.0,0,Call centar,2025-03-10,,Ne,False,False,False,False,45-59,0,Ne,2025.0,920.6153846153846,Da,1-3 god
 K00941,Šumadija i Zapadna Srbija,M,40,Postpaid,9.0,2238.0,7.0,236.0,27.0,0,Poslovnica,2025-11-30,3.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,319.7142857142857,Da,go 1 god
 K00885,Beograd,Ž,57,Prepaid,25.0,1001.0,2.4,179.0,34.0,0,Poslovnica,2024-07-23,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,417.08333333333337,Da,1-3 god
-K00575,Beograd,Ž,37,Biznis,15.0,2387.0,4.9,3.0,53.0,0,Poslovnica,2025-05-09,4.0,Da,False,False,False,True,30-44,1,Ne,2025.0,487.1428571428571,Da,1-3 god
+K00575,Beograd,Ž,37,Biznis,15.0,2383.0,4.9,3.0,53.0,0,Poslovnica,2025-05-09,4.0,Da,False,False,False,True,30-44,1,Ne,2025.0,486.3265306122449,Da,1-3 god
 K00667,Beograd,Ž,59,Prepaid,24.0,1321.0,2.0,575.0,42.0,0,Poslovnica,2024-08-13,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,660.5,Da,1-3 god
 K00505,Beograd,Ž,18,Postpaid,91.0,2717.0,11.9,247.0,33.0,0,Call centar,2019-01-24,4.0,Ne,False,False,False,True,18-29,0,Ne,2019.0,228.31932773109244,Da,6+ god
 K00136,Šumadija i Zapadna Srbija,Ž,55,Biznis,23.0,5144.0,1.6,61.0,30.0,0,Poslovnica,2024-09-19,3.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,3215.0,Da,1-3 god
@@ -440,7 +436,7 @@ K00766,Vojvodina,Ž,43,Postpaid,11.0,2862.0,7.8,278.0,36.0,1,Call centar,2025-09
 K01065,Šumadija i Zapadna Srbija,M,64,Biznis,57.0,4620.0,4.2,435.0,33.0,0,Partner,2021-11-14,4.0,Ne,False,False,False,True,60+,0,Ne,2021.0,1100.0,Da,3-6 god
 K00915,Vojvodina,Ž,29,Postpaid,27.0,2220.0,9.7,0.0,36.0,1,Online,2024-05-13,4.0,Ne,False,False,False,True,18-29,0,Da,2024.0,228.8659793814433,Da,1-3 god
 K00006,Šumadija i Zapadna Srbija,Ž,32,Prepaid,1.0,1348.0,11.7,259.0,29.0,0,Online,2026-07-29,5.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,115.21367521367522,Da,go 1 god
-K00570,Južna i Istočna Srbija,Ž,44,Postpaid,69.0,2482.5,2.8,370.0,36.0,2,Poslovnica,2020-12-01,4.0,Da,False,False,False,True,30-44,1,Da,2020.0,886.6071428571429,Da,3-6 god
+K00570,Južna i Istočna Srbija,Ž,44,Postpaid,69.0,2478.0,2.8,370.0,36.0,2,Poslovnica,2020-12-01,4.0,Da,False,False,False,True,30-44,1,Da,2020.0,885.0,Da,3-6 god
 K01173,Južna i Istočna Srbija,M,42,Biznis,109.0,5520.0,4.3,239.0,35.0,0,Poslovnica,2017-07-14,2.0,Ne,False,False,False,True,30-44,0,Ne,2017.0,1283.7209302325582,Da,6+ god
 K00030,Beograd,M,66,Postpaid,35.0,2574.0,3.1,398.0,46.0,1,Poslovnica,2023-09-06,,Ne,False,False,False,False,60+,0,Da,2023.0,830.3225806451612,Da,1-3 god
 K00175,Južna i Istočna Srbija,M,67,Biznis,86.0,4242.0,3.1,312.0,44.0,1,Call centar,2019-06-11,3.0,Ne,False,False,False,True,60+,0,Da,2019.0,1368.3870967741934,Da,6+ god
@@ -459,7 +455,7 @@ K00831,Južna i Istočna Srbija,Ž,54,Prepaid,20.0,1167.0,3.8,275.0,44.0,0,Poslo
 K00436,Beograd,M,28,Biznis,77.0,4663.0,7.2,318.0,41.0,0,Partner,2020-03-28,3.0,Da,False,False,False,True,18-29,1,Ne,2020.0,647.6388888888889,Da,6+ god
 K00343,Beograd,M,31,Prepaid,22.0,1228.0,18.5,457.0,41.0,0,Online,2024-10-28,5.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,66.37837837837837,Da,1-3 god
 K01061,Južna i Istočna Srbija,M,38,Postpaid,25.0,3251.0,3.4,239.0,32.0,1,Partner,2024-07-29,3.0,Ne,False,False,False,True,30-44,0,Da,2024.0,956.1764705882354,Da,1-3 god
-K00204,Šumadija i Zapadna Srbija,M,36,Prepaid,3.0,2148.5,6.2,473.0,52.0,0,Partner,2026-05-20,4.0,Da,False,False,False,True,30-44,1,Ne,2026.0,346.5322580645161,Da,go 1 god
+K00204,Šumadija i Zapadna Srbija,M,36,Prepaid,3.0,2141.0,6.2,473.0,52.0,0,Partner,2026-05-20,4.0,Da,False,False,False,True,30-44,1,Ne,2026.0,345.3225806451613,Da,go 1 god
 K00506,Beograd,M,46,Postpaid,180.0,4554.0,3.1,260.0,43.0,0,Partner,2011-08-29,,Ne,False,False,False,False,45-59,0,Ne,2011.0,1469.032258064516,Da,6+ god
 K00671,Nepoznato,Ž,45,Postpaid,47.0,2357.0,6.9,333.0,31.0,2,Poslovnica,2022-09-20,3.0,Da,False,False,False,True,45-59,1,Da,2022.0,341.5942028985507,Da,3-6 god
 K00693,Šumadija i Zapadna Srbija,Ž,36,Prepaid,54.0,1912.0,9.8,435.0,37.0,0,Online,2022-02-16,5.0,Ne,False,False,False,True,30-44,0,Ne,2022.0,195.1020408163265,Da,3-6 god
@@ -492,7 +488,7 @@ K00958,Južna i Istočna Srbija,Ž,46,Prepaid,8.0,1991.0,7.6,368.0,40.0,0,Call c
 K00507,Vojvodina,Ž,37,Prepaid,27.0,2186.0,8.7,275.0,31.0,0,Poslovnica,2024-06-01,5.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,251.26436781609198,Da,1-3 god
 K00740,Beograd,Ž,18,Prepaid,37.0,2.101,14.9,344.0,37.0,0,Online,2023-07-27,4.0,Ne,False,False,False,True,18-29,0,Ne,2023.0,0.14100671140939597,Da,3-6 god
 K00853,Vojvodina,Ž,28,Prepaid,33.0,844.0,6.4,370.0,50.0,0,Online,2023-11-25,4.0,Ne,False,False,False,True,18-29,0,Ne,2023.0,131.875,Da,1-3 god
-K00686,Šumadija i Zapadna Srbija,Ž,30,Prepaid,21.0,2148.5,11.3,248.0,32.0,1,Poslovnica,2024-11-15,3.0,Da,False,False,False,True,30-44,1,Da,2024.0,190.13274336283186,Da,1-3 god
+K00686,Šumadija i Zapadna Srbija,Ž,30,Prepaid,21.0,2141.0,11.3,248.0,32.0,1,Poslovnica,2024-11-15,3.0,Da,False,False,False,True,30-44,1,Da,2024.0,189.46902654867256,Da,1-3 god
 K00714,Južna i Istočna Srbija,Ž,40,Postpaid,76.0,4354.0,7.9,219.0,46.0,0,Poslovnica,2020-04-10,,Da,False,False,False,False,30-44,1,Ne,2020.0,551.1392405063291,Da,6+ god
 K00147,Beograd,M,28,Postpaid,16.0,2478.0,4.8,377.0,46.0,0,Call centar,2025-05-01,5.0,Ne,False,False,False,True,18-29,0,Ne,2025.0,516.25,Da,1-3 god
 K00221,Vojvodina,M,50,Postpaid,59.0,2508.0,1.8,417.0,34.0,0,Online,2021-09-07,4.0,Ne,False,False,False,True,45-59,0,Ne,2021.0,1393.3333333333333,Da,3-6 god
@@ -532,15 +528,15 @@ K01088,Beograd,M,57,Postpaid,20.0,2605.0,1.6,174.0,32.0,1,Online,2024-12-23,4.0,
 K00759,Južna i Istočna Srbija,M,49,Prepaid,35.0,943.0,2.3,367.0,43.0,0,Poslovnica,2023-10-01,5.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,410.00000000000006,Da,1-3 god
 K01121,Šumadija i Zapadna Srbija,Ž,48,Postpaid,81.0,2117.0,13.4,224.0,46.0,2,Call centar,2019-11-25,3.0,Ne,False,False,False,True,45-59,0,Da,2019.0,157.98507462686567,Da,6+ god
 K00261,Južna i Istočna Srbija,Ž,48,Biznis,23.0,7347.0,7.7,235.0,31.0,2,Partner,2024-09-28,2.0,Ne,True,False,False,True,45-59,0,Da,2024.0,954.1558441558441,Da,1-3 god
-K00894,Južna i Istočna Srbija,M,57,Postpaid,23.0,2482.5,0.9,148.0,28.0,0,Online,2024-09-26,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,2758.3333333333335,Da,1-3 god
+K00894,Južna i Istočna Srbija,M,57,Postpaid,23.0,2478.0,0.9,148.0,28.0,0,Online,2024-09-26,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,2753.3333333333335,Da,1-3 god
 K00867,Šumadija i Zapadna Srbija,Ž,40,Prepaid,7.0,997.0,11.3,574.0,40.0,1,Online,2026-01-31,5.0,Ne,False,False,True,True,30-44,0,Da,2026.0,88.23008849557522,Da,go 1 god
 K00207,Beograd,M,28,Prepaid,39.0,1533.0,9.6,213.0,50.0,2,Partner,2023-06-01,2.0,Ne,False,False,False,True,18-29,0,Da,2023.0,159.6875,Da,3-6 god
 K00077,Beograd,M,34,Prepaid,20.0,1129.0,7.5,202.0,38.0,1,Call centar,2024-12-14,3.0,Da,False,False,False,True,30-44,1,Da,2024.0,150.53333333333333,Da,1-3 god
 K01011,Šumadija i Zapadna Srbija,Ž,59,Postpaid,77.0,3537.0,2.1,364.0,39.0,1,Poslovnica,2020-03-16,4.0,Ne,False,False,False,True,45-59,0,Da,2020.0,1684.2857142857142,Da,6+ god
 K00438,Beograd,Ž,36,Postpaid,87.0,4154.0,13.9,97.0,37.0,1,Online,2019-05-19,2.0,Ne,False,False,False,True,30-44,0,Da,2019.0,298.84892086330933,Da,6+ god
 K00158,Vojvodina,M,36,Prepaid,35.0,1559.0,10.8,397.0,44.0,1,Poslovnica,2023-09-17,3.0,Ne,False,False,False,True,30-44,0,Da,2023.0,144.35185185185185,Da,1-3 god
-K00084,Beograd,M,49,Postpaid,70.0,3420.0,6.4,145.0,32.0,2,Poslovnica,2020-11-01,2.0,Ne,False,False,False,True,45-59,0,Da,2020.0,534.375,Da,3-6 god
-K00264,Šumadija i Zapadna Srbija,M,50,Postpaid,11.0,2148.5,2.6,210.0,30.0,0,Poslovnica,2025-09-14,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,826.3461538461538,Da,go 1 god
+K00084,Beograd,M,49,Postpaid,70.0,3420.0,6.3,145.0,32.0,2,Poslovnica,2020-11-01,2.0,Ne,False,False,False,True,45-59,0,Da,2020.0,542.8571428571429,Da,3-6 god
+K00264,Šumadija i Zapadna Srbija,M,50,Postpaid,11.0,2141.0,2.6,210.0,30.0,0,Poslovnica,2025-09-14,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,823.4615384615385,Da,go 1 god
 K01055,Beograd,M,52,Postpaid,19.0,3666.0,1.6,258.0,40.0,0,Poslovnica,2025-01-05,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,2291.25,Da,1-3 god
 K00532,Južna i Istočna Srbija,M,44,Biznis,43.0,5968.0,8.2,56.0,31.0,1,Online,2023-02-01,,Ne,False,False,False,False,30-44,0,Da,2023.0,727.8048780487806,Da,3-6 god
 K00324,Šumadija i Zapadna Srbija,Ž,51,Postpaid,50.0,3471.0,5.7,154.0,45.0,0,Poslovnica,2022-06-15,3.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,608.9473684210526,Da,3-6 god
@@ -580,18 +576,16 @@ K01170,Vojvodina,M,51,Postpaid,33.0,2572.0,3.9,64.0,35.0,5,Online,2023-11-15,2.0
 K00322,Južna i Istočna Srbija,M,39,Biznis,157.0,8107.0,4.6,280.0,32.0,1,Call centar,2013-07-18,,Ne,True,False,False,False,30-44,0,Da,2013.0,1762.3913043478262,Da,6+ god
 K00283,Beograd,Ž,37,Prepaid,7.0,1785.0,9.9,396.0,47.0,1,Poslovnica,2026-01-07,4.0,Ne,False,False,False,True,30-44,0,Da,2026.0,180.30303030303028,Da,go 1 god
 K00015,Vojvodina,M,40,Biznis,45.0,7655.0,24.9,353.0,31.0,5,Poslovnica,2022-11-19,2.0,Da,True,True,False,True,30-44,1,Da,2022.0,307.42971887550203,Da,3-6 god
-K00368,Beograd,M,24,Biznis,12.0,64490.0,6.3,350.0,48.0,0,Poslovnica,2025-08-31,4.0,Da,True,False,False,True,18-29,1,Ne,2025.0,10236.507936507936,Da,go 1 god
 K01180,Nepoznato,Ž,45,Postpaid,45.0,2653.0,14.5,320.0,26.0,0,Partner,2022-11-22,3.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,182.9655172413793,Da,3-6 god
 K00997,Južna i Istočna Srbija,M,43,Prepaid,1.0,1114.0,8.4,42.0,39.0,0,Call centar,2026-07-14,5.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,132.61904761904762,Da,go 1 god
 K01187,Južna i Istočna Srbija,M,42,Prepaid,53.0,1028.0,3.4,367.0,43.0,0,Poslovnica,2022-03-17,4.0,Da,False,False,False,True,30-44,1,Ne,2022.0,302.3529411764706,Da,3-6 god
 K00972,Šumadija i Zapadna Srbija,Ž,48,Postpaid,37.0,3420.0,2.8,464.0,36.0,1,Online,2023-08-01,3.0,Da,False,False,False,True,45-59,1,Da,2023.0,1221.4285714285716,Da,3-6 god
 K00994,Šumadija i Zapadna Srbija,M,18,Prepaid,64.0,898.0,17.2,367.0,35.0,0,Poslovnica,2021-05-01,5.0,Ne,False,False,False,True,18-29,0,Ne,2021.0,52.2093023255814,Da,3-6 god
-K01025,Beograd,M,52,Postpaid,55.0,3575.0,6.4,184.0,45.0,0,Call centar,2022-01-21,4.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,558.59375,Da,3-6 god
+K01025,Beograd,M,52,Postpaid,55.0,3575.0,6.3,184.0,45.0,0,Call centar,2022-01-21,4.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,567.4603174603175,Da,3-6 god
 K01099,Južna i Istočna Srbija,Ž,41,Prepaid,57.0,1866.0,6.5,0.0,30.0,0,Partner,2021-11-14,4.0,Ne,False,False,False,True,30-44,0,Ne,2021.0,287.0769230769231,Da,3-6 god
 K00822,Šumadija i Zapadna Srbija,M,23,Postpaid,21.0,2405.0,14.5,226.0,38.0,1,Online,2024-11-26,3.0,Ne,False,False,False,True,18-29,0,Da,2024.0,165.86206896551724,Da,1-3 god
-K00009,Šumadija i Zapadna Srbija,M,59,Prepaid,11.0,2148.5,4.9,119.0,46.0,0,Partner,2025-09-21,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,438.469387755102,Da,go 1 god
+K00009,Šumadija i Zapadna Srbija,M,59,Prepaid,11.0,2141.0,4.9,119.0,46.0,0,Partner,2025-09-21,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,436.93877551020404,Da,go 1 god
 K00182,Šumadija i Zapadna Srbija,Ž,33,Prepaid,16.0,2003.0,9.4,155.0,38.0,2,Online,2025-04-10,2.0,Da,False,False,False,True,30-44,1,Da,2025.0,213.08510638297872,Da,1-3 god
-K00361,Šumadija i Zapadna Srbija,M,23,Postpaid,27.0,20750.0,7.9,253.0,35.0,0,Online,2024-05-09,5.0,Ne,True,False,False,True,18-29,0,Ne,2024.0,2626.5822784810125,Da,1-3 god
 K00223,Šumadija i Zapadna Srbija,Ž,60,Postpaid,5.0,1271.0,0.6,274.0,35.0,0,Online,2026-03-12,5.0,Ne,False,False,False,True,60+,0,Ne,2026.0,2118.3333333333335,Da,go 1 god
 K00554,Južna i Istočna Srbija,Ž,25,Prepaid,3.0,1598.0,10.6,289.0,43.0,0,Partner,2026-05-15,4.0,Ne,False,False,False,True,18-29,0,Ne,2026.0,150.75471698113208,Da,go 1 god
 K00441,Šumadija i Zapadna Srbija,M,50,Prepaid,48.0,1656.0,6.5,304.0,29.0,0,Online,2022-08-22,3.0,Da,False,False,False,True,45-59,1,Ne,2022.0,254.76923076923077,Da,3-6 god
@@ -603,7 +597,7 @@ K00768,Južna i Istočna Srbija,M,46,Postpaid,82.0,3161.0,2.4,153.0,36.0,2,Poslo
 K00701,Vojvodina,Ž,40,Prepaid,33.0,1391.0,9.5,299.0,37.0,1,Poslovnica,2023-11-18,3.0,Da,False,False,False,True,30-44,1,Da,2023.0,146.42105263157896,Da,1-3 god
 K00878,Šumadija i Zapadna Srbija,Ž,57,Prepaid,10.0,1375.0,1.0,530.0,46.0,1,Poslovnica,2025-10-24,2.0,Da,False,False,False,True,45-59,1,Da,2025.0,1375.0,Da,go 1 god
 K00154,Beograd,M,39,Postpaid,31.0,3335.0,1.6,134.0,33.0,0,Call centar,2024-01-14,4.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,2084.375,Da,1-3 god
-K00488,Vojvodina,Ž,43,Prepaid,2.0,2380.0,6.3,115.0,37.0,3,Poslovnica,2026-06-18,3.0,Da,False,False,False,True,30-44,1,Da,2026.0,377.77777777777777,Da,go 1 god
+K00488,Vojvodina,Ž,43,Prepaid,2.0,2361.0,6.3,115.0,37.0,3,Poslovnica,2026-06-18,3.0,Da,False,False,False,True,30-44,1,Da,2026.0,374.76190476190476,Da,go 1 god
 K00123,Beograd,M,36,Prepaid,22.0,1403.0,6.2,197.0,28.0,0,Partner,2024-11-01,4.0,Da,False,False,False,True,30-44,1,Ne,2024.0,226.29032258064515,Da,1-3 god
 K00774,Vojvodina,Ž,36,Prepaid,25.0,1272.0,9.3,225.0,41.0,0,Poslovnica,2024-07-19,,Ne,False,False,False,False,30-44,0,Ne,2024.0,136.77419354838707,Da,1-3 god
 K00876,Vojvodina,Ž,40,Prepaid,32.0,1194.0,3.2,135.0,50.0,1,Poslovnica,2023-12-22,4.0,Ne,False,False,True,True,30-44,0,Da,2023.0,373.125,Da,1-3 god
@@ -645,7 +639,7 @@ K00799,Beograd,M,24,Postpaid,88.0,2975.0,11.0,132.0,34.0,1,Online,2019-04-23,,Ne
 K00421,Beograd,M,49,Prepaid,110.0,0.1253,5.1,295.0,35.0,1,Online,2017-06-23,4.0,Ne,False,False,False,True,45-59,0,Da,2017.0,0.024568627450980395,Da,6+ god
 K00025,Vojvodina,M,44,Postpaid,78.0,2157.0,8.8,254.0,34.0,2,Poslovnica,2020-02-11,2.0,Ne,False,False,False,True,30-44,0,Da,2020.0,245.11363636363635,Da,6+ god
 K00493,Šumadija i Zapadna Srbija,M,28,Prepaid,3.0,1660.0,35.0,318.0,27.0,0,Online,2026-05-15,3.0,Ne,False,True,False,True,18-29,0,Ne,2026.0,47.42857142857143,Da,go 1 god
-K00642,Vojvodina,M,61,Postpaid,106.0,2380.0,2.0,288.0,32.0,1,Online,2017-10-20,4.0,Ne,False,False,False,True,60+,0,Da,2017.0,1190.0,Da,6+ god
+K00642,Vojvodina,M,61,Postpaid,106.0,2361.0,2.0,288.0,32.0,1,Online,2017-10-20,4.0,Ne,False,False,False,True,60+,0,Da,2017.0,1180.5,Da,6+ god
 K00978,Beograd,Ž,49,Prepaid,21.0,1383.0,6.1,417.0,38.0,0,Poslovnica,,3.0,Da,False,False,False,True,45-59,1,Ne,,226.72131147540986,Da,1-3 god
 K01036,Šumadija i Zapadna Srbija,M,56,Prepaid,39.0,525.0,6.5,484.0,36.0,0,Poslovnica,2023-06-02,4.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,80.76923076923077,Da,3-6 god
 K00410,Šumadija i Zapadna Srbija,Ž,63,Postpaid,9.0,2508.0,2.6,212.0,33.0,0,Online,2025-11-22,5.0,Ne,False,False,False,True,60+,0,Ne,2025.0,964.6153846153845,Da,go 1 god
@@ -669,7 +663,7 @@ K00443,Južna i Istočna Srbija,Ž,46,Biznis,10.0,6511.0,2.6,239.0,34.0,0,Poslov
 K00847,Vojvodina,Ž,58,Postpaid,29.0,2961.0,2.6,350.0,37.0,2,Online,2024-03-28,2.0,Da,False,False,False,True,45-59,1,Da,2024.0,1138.8461538461538,Da,1-3 god
 K00719,Šumadija i Zapadna Srbija,M,18,Prepaid,4.0,1420.0,7.5,349.0,32.0,0,Poslovnica,2026-04-09,4.0,Ne,False,False,False,True,18-29,0,Ne,2026.0,189.33333333333334,Da,go 1 god
 K00477,Južna i Istočna Srbija,M,46,Biznis,38.0,5577.0,5.8,49.0,48.0,0,Call centar,2023-06-24,3.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,961.551724137931,Da,3-6 god
-K00131,Južna i Istočna Srbija,Ž,48,Prepaid,32.0,2482.5,4.6,231.0,35.0,1,Poslovnica,2023-12-19,3.0,Ne,False,False,False,True,45-59,0,Da,2023.0,539.6739130434783,Da,1-3 god
+K00131,Južna i Istočna Srbija,Ž,48,Prepaid,32.0,2478.0,4.6,231.0,35.0,1,Poslovnica,2023-12-19,3.0,Ne,False,False,False,True,45-59,0,Da,2023.0,538.6956521739131,Da,1-3 god
 K00594,Beograd,Ž,70,Postpaid,152.0,3160.0,2.2,100.0,36.0,0,Partner,2013-12-21,3.0,Ne,False,False,False,True,60+,0,Ne,2013.0,1436.3636363636363,Da,6+ god
 K00592,Vojvodina,M,48,Prepaid,87.0,885.0,2.0,189.0,31.0,2,Poslovnica,2019-06-02,2.0,Ne,False,False,False,True,45-59,0,Da,2019.0,442.5,Da,6+ god
 K00037,Vojvodina,Ž,56,Prepaid,11.0,733.0,8.3,123.0,44.0,2,Online,2025-09-11,3.0,Ne,False,False,False,True,45-59,0,Da,2025.0,88.31325301204818,Da,go 1 god
@@ -679,7 +673,6 @@ K00079,Beograd,M,49,Biznis,83.0,5974.0,4.0,96.0,47.0,0,Online,2019-09-10,5.0,Da,
 K00216,Beograd,M,43,Postpaid,38.0,2289.0,9.3,316.0,33.0,0,Poslovnica,2023-07-01,3.0,Ne,False,False,True,True,30-44,0,Ne,2023.0,246.12903225806448,Da,3-6 god
 K00375,Južna i Istočna Srbija,Ž,26,Prepaid,42.0,1671.0,3.7,335.0,39.0,0,Online,2023-03-03,5.0,Ne,False,False,False,True,18-29,0,Ne,2023.0,451.6216216216216,Da,3-6 god
 K00403,Vojvodina,M,51,Postpaid,43.0,1988.0,2.5,296.0,37.0,0,Poslovnica,2023-01-10,4.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,795.2,Da,3-6 god
-K00197,Južna i Istočna Srbija,M,55,Postpaid,86.0,32020.0,8.4,223.0,37.0,0,Poslovnica,2019-07-06,3.0,Ne,True,False,False,True,45-59,0,Ne,2019.0,3811.904761904762,Da,6+ god
 K00389,Vojvodina,M,67,Biznis,16.0,4526.0,2.0,259.0,35.0,0,Call centar,2025-04-25,4.0,Ne,False,False,False,True,60+,0,Ne,2025.0,2263.0,Da,1-3 god
 K00178,Beograd,Ž,36,Prepaid,11.0,1463.0,4.8,263.0,44.0,1,Online,2025-09-23,3.0,Da,False,False,False,True,30-44,1,Da,2025.0,304.7916666666667,Da,go 1 god
 K00378,Beograd,M,31,Biznis,76.0,6072.0,6.2,125.0,37.0,0,Poslovnica,2020-04-08,,Ne,False,False,False,False,30-44,0,Ne,2020.0,979.3548387096774,Da,6+ god
@@ -694,14 +687,14 @@ K00767,Beograd,M,53,Biznis,160.0,9675.0,2.9,378.0,38.0,0,Poslovnica,2013-05-08,4
 K00401,Beograd,Ž,59,Prepaid,53.0,1839.0,6.5,151.0,35.0,4,Poslovnica,2022-03-24,2.0,Ne,False,False,False,True,45-59,0,Da,2022.0,282.9230769230769,Da,3-6 god
 K00162,Vojvodina,Ž,45,Prepaid,16.0,1206.0,9.8,21.0,40.0,0,Online,2025-04-25,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,123.0612244897959,Da,1-3 god
 K00226,Beograd,Ž,38,Biznis,180.0,8030.0,8.1,136.0,33.0,1,Partner,2011-08-28,3.0,Ne,True,False,False,True,30-44,0,Da,2011.0,991.3580246913581,Da,6+ god
-K00625,Šumadija i Zapadna Srbija,M,44,Biznis,22.0,6760.0,4.7,230.0,36.0,1,Partner,2024-10-31,3.0,Ne,False,False,False,True,30-44,0,Da,2024.0,1438.2978723404256,Da,1-3 god
+K00625,Šumadija i Zapadna Srbija,M,44,Biznis,22.0,6760.0,4.7,230.0,36.0,1,Partner,2024-10-31,3.0,Ne,True,False,False,True,30-44,0,Da,2024.0,1438.2978723404256,Da,1-3 god
 K00747,Južna i Istočna Srbija,M,45,Prepaid,39.0,739.0,2.3,410.0,40.0,0,Call centar,2023-05-21,4.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,321.304347826087,Da,3-6 god
 K00462,Vojvodina,Ž,55,Postpaid,38.0,2465.0,3.5,251.0,38.0,0,Call centar,2023-06-21,3.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,704.2857142857143,Da,3-6 god
 K00950,Beograd,M,70,Postpaid,38.0,2938.0,1.4,218.0,40.0,0,Partner,2023-06-14,4.0,Ne,False,False,False,True,60+,0,Ne,2023.0,2098.571428571429,Da,3-6 god
 K00923,Južna i Istočna Srbija,Ž,65,Postpaid,3.0,2769.0,0.7,275.0,34.0,2,Poslovnica,2026-05-20,,Da,False,False,False,False,60+,1,Da,2026.0,3955.714285714286,Da,go 1 god
 K00756,Beograd,M,36,Prepaid,7.0,1184.0,7.3,346.0,58.0,0,Poslovnica,2026-01-05,4.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,162.1917808219178,Da,go 1 god
-K00771,Južna i Istočna Srbija,Ž,45,Prepaid,10.0,2482.5,2.3,83.0,39.0,2,Poslovnica,2025-10-17,1.0,Da,False,False,False,True,45-59,1,Da,2025.0,1079.3478260869565,Da,go 1 god
-K00970,Vojvodina,M,46,Biznis,31.0,6774.0,3.3,235.0,32.0,3,Call centar,2024-01-21,3.0,Ne,False,False,False,True,45-59,0,Da,2024.0,2052.727272727273,Da,1-3 god
+K00771,Južna i Istočna Srbija,Ž,45,Prepaid,10.0,2478.0,2.3,83.0,39.0,2,Poslovnica,2025-10-17,1.0,Da,False,False,False,True,45-59,1,Da,2025.0,1077.3913043478262,Da,go 1 god
+K00970,Vojvodina,M,46,Biznis,31.0,6774.0,3.3,235.0,32.0,3,Call centar,2024-01-21,3.0,Ne,True,False,False,True,45-59,0,Da,2024.0,2052.727272727273,Da,1-3 god
 K00013,Šumadija i Zapadna Srbija,Ž,40,Prepaid,49.0,1682.0,3.0,317.0,42.0,2,Partner,2022-07-30,2.0,Da,False,False,False,True,30-44,1,Da,2022.0,560.6666666666666,Da,3-6 god
 K01181,Beograd,Ž,27,Postpaid,89.0,4903.0,12.6,114.0,46.0,0,Online,2019-03-31,3.0,Ne,False,False,False,True,18-29,0,Ne,2019.0,389.12698412698415,Da,6+ god
 K00597,Šumadija i Zapadna Srbija,Ž,50,Prepaid,24.0,1468.0,3.0,235.0,35.0,1,Poslovnica,2024-08-31,3.0,Ne,False,False,False,True,45-59,0,Da,2024.0,489.3333333333333,Da,1-3 god
@@ -709,7 +702,7 @@ K00928,Beograd,Ž,18,Prepaid,13.0,928.0,21.1,487.0,48.0,1,Poslovnica,2025-07-19,
 K00054,Vojvodina,Ž,47,Postpaid,177.0,2616.0,7.6,315.0,40.0,1,Poslovnica,2011-11-17,3.0,Ne,False,False,False,True,45-59,0,Da,2011.0,344.2105263157895,Da,6+ god
 K00267,Vojvodina,M,40,Biznis,14.0,5896.0,2.3,152.0,39.0,0,Poslovnica,2025-06-25,3.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,2563.4782608695655,Da,1-3 god
 K01013,Vojvodina,M,36,Prepaid,79.0,839.0,6.5,312.0,37.0,0,Poslovnica,2020-01-25,4.0,Ne,False,False,False,True,30-44,0,Ne,2020.0,129.07692307692307,Da,6+ god
-K00328,Vojvodina,Ž,36,Prepaid,14.0,2380.0,6.7,159.0,32.0,0,Poslovnica,2025-06-23,5.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,355.2238805970149,Da,1-3 god
+K00328,Vojvodina,Ž,36,Prepaid,14.0,2361.0,6.7,159.0,32.0,0,Poslovnica,2025-06-23,5.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,352.3880597014925,Da,1-3 god
 K00628,Šumadija i Zapadna Srbija,M,41,Postpaid,31.0,2191.0,6.8,140.0,43.0,0,Partner,2024-01-08,4.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,322.20588235294116,Da,1-3 god
 K00256,Šumadija i Zapadna Srbija,Ž,44,Postpaid,45.0,3313.0,6.8,327.0,33.0,0,Online,2022-11-14,,Ne,False,False,False,False,30-44,0,Ne,2022.0,487.2058823529412,Da,3-6 god
 K00956,Beograd,M,25,Biznis,58.0,6520.0,11.9,247.0,43.0,1,Poslovnica,2021-10-18,5.0,Ne,False,False,False,True,18-29,0,Da,2021.0,547.8991596638655,Da,3-6 god
@@ -726,13 +719,13 @@ K00194,Vojvodina,M,40,Prepaid,12.0,1568.0,4.8,371.0,41.0,1,Poslovnica,2025-08-10
 K00810,Južna i Istočna Srbija,Ž,44,Prepaid,7.0,930.0,4.3,370.0,43.0,0,Partner,2026-01-18,3.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,216.27906976744188,Da,go 1 god
 K00848,Vojvodina,Ž,43,Postpaid,3.0,3022.0,6.5,460.0,36.0,0,Online,2026-06-02,4.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,464.9230769230769,Da,go 1 god
 K00897,Južna i Istočna Srbija,M,41,Prepaid,17.0,1.354,6.9,285.0,32.0,0,Online,2025-03-07,4.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,0.196231884057971,Da,1-3 god
-K00946,Beograd,Ž,40,Postpaid,14.0,2503.0,6.4,353.0,40.0,1,Call centar,2025-06-23,4.0,Ne,False,False,False,True,30-44,0,Da,2025.0,391.09375,Da,1-3 god
+K00946,Beograd,Ž,40,Postpaid,14.0,2503.0,6.3,353.0,40.0,1,Call centar,2025-06-23,4.0,Ne,False,False,False,True,30-44,0,Da,2025.0,397.3015873015873,Da,1-3 god
 K01178,Vojvodina,Ž,39,Postpaid,10.0,2361.0,5.1,361.0,42.0,0,Online,2025-10-31,,Ne,False,False,False,False,30-44,0,Ne,2025.0,462.9411764705883,Da,go 1 god
 K00490,Beograd,M,22,Prepaid,3.0,1167.0,8.5,19.0,32.0,0,Poslovnica,2026-05-15,4.0,Da,False,False,False,True,18-29,1,Ne,2026.0,137.2941176470588,Da,go 1 god
 K00487,Beograd,Ž,39,Prepaid,1.0,1416.0,5.1,290.0,39.0,1,Poslovnica,2026-07-17,5.0,Ne,False,False,False,True,30-44,0,Da,2026.0,277.64705882352945,Da,go 1 god
 K00717,Šumadija i Zapadna Srbija,M,44,Postpaid,62.0,2667.0,7.0,402.0,30.0,0,Poslovnica,,1.0,Ne,False,False,False,True,30-44,0,Ne,,381.0,Da,3-6 god
 K00555,Vojvodina,M,43,Postpaid,7.0,2534.0,5.4,74.0,33.0,0,Poslovnica,2026-01-29,4.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,469.25925925925924,Da,go 1 god
-K00387,Beograd,Ž,38,Postpaid,138.0,2387.0,8.7,422.0,28.0,0,Poslovnica,2015-02-27,4.0,Ne,False,False,False,True,30-44,0,Ne,2015.0,274.36781609195407,Da,6+ god
+K00387,Beograd,Ž,38,Postpaid,138.0,2383.0,8.7,422.0,28.0,0,Poslovnica,2015-02-27,4.0,Ne,False,False,False,True,30-44,0,Ne,2015.0,273.9080459770115,Da,6+ god
 K00864,Vojvodina,Ž,43,Postpaid,13.0,3345.0,7.9,89.0,53.0,0,Call centar,2025-07-26,2.0,Ne,False,False,True,True,30-44,0,Ne,2025.0,423.4177215189873,Da,1-3 god
 K00699,Šumadija i Zapadna Srbija,Ž,51,Prepaid,37.0,669.0,5.2,327.0,31.0,1,Call centar,2023-07-12,4.0,Ne,False,False,False,True,45-59,0,Da,2023.0,128.65384615384616,Da,3-6 god
 K00652,Južna i Istočna Srbija,M,33,Postpaid,3.0,3901.0,11.3,233.0,42.0,0,Poslovnica,2026-05-11,4.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,345.2212389380531,Da,go 1 god
@@ -749,7 +742,7 @@ K00688,Vojvodina,M,66,Postpaid,48.0,3050.0,1.6,409.0,36.0,0,Poslovnica,2022-09-0
 K00458,Šumadija i Zapadna Srbija,Ž,41,Prepaid,33.0,1824.0,2.5,257.0,36.0,0,Call centar,2023-11-19,5.0,Ne,False,False,False,True,30-44,0,Ne,2023.0,729.6,Da,1-3 god
 K00055,Vojvodina,M,54,Prepaid,23.0,1702.0,4.1,321.0,32.0,1,Call centar,2024-09-18,4.0,Ne,False,False,False,True,45-59,0,Da,2024.0,415.12195121951225,Da,1-3 god
 K00909,Beograd,Ž,18,Prepaid,10.0,1374.0,6.1,191.0,31.0,0,Call centar,2025-10-17,5.0,Da,False,False,False,True,18-29,1,Ne,2025.0,225.24590163934428,Da,go 1 god
-K00918,Južna i Istočna Srbija,M,61,Postpaid,62.0,2561.0,6.4,245.0,43.0,1,Online,2021-07-03,1.0,Da,False,False,False,True,60+,1,Da,2021.0,400.15625,Da,3-6 god
+K00918,Južna i Istočna Srbija,M,61,Postpaid,62.0,2561.0,6.3,245.0,43.0,1,Online,2021-07-03,1.0,Da,False,False,False,True,60+,1,Da,2021.0,406.5079365079365,Da,3-6 god
 K00935,Beograd,Ž,58,Prepaid,49.0,1630.0,1.8,60.0,38.0,2,Nepoznato,2022-07-27,3.0,Ne,False,False,False,True,45-59,0,Da,2022.0,905.5555555555555,Da,3-6 god
 K00998,Beograd,Ž,44,Biznis,32.0,5041.0,6.6,120.0,28.0,0,Online,2023-12-29,5.0,Ne,False,False,False,True,30-44,0,Ne,2023.0,763.7878787878789,Da,1-3 god
 K00466,Beograd,Ž,53,Prepaid,26.0,1422.0,7.7,159.0,34.0,0,Call centar,2024-06-30,2.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,184.67532467532467,Da,1-3 god
@@ -785,9 +778,8 @@ K00942,Južna i Istočna Srbija,M,38,Prepaid,17.0,495.0,8.8,352.0,40.0,0,Poslovn
 K00968,Beograd,M,45,Prepaid,12.0,510.0,14.5,253.0,30.0,0,Partner,2025-08-21,5.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,35.172413793103445,Da,go 1 god
 K00663,Vojvodina,M,36,Prepaid,5.0,1351.0,18.2,56.0,37.0,0,Partner,2026-03-24,4.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,74.23076923076924,Da,go 1 god
 K00241,Šumadija i Zapadna Srbija,M,61,Postpaid,57.0,2220.0,4.6,338.0,40.0,0,Partner,2021-11-26,3.0,Ne,False,False,False,True,60+,0,Ne,2021.0,482.60869565217394,Da,3-6 god
-K00936,Šumadija i Zapadna Srbija,M,49,Postpaid,103.0,2148.5,3.7,129.0,44.0,4,Poslovnica,2018-02-02,2.0,Da,False,False,False,True,45-59,1,Da,2018.0,580.6756756756756,Da,6+ god
+K00936,Šumadija i Zapadna Srbija,M,49,Postpaid,103.0,2141.0,3.7,129.0,44.0,4,Poslovnica,2018-02-02,2.0,Da,False,False,False,True,45-59,1,Da,2018.0,578.6486486486486,Da,6+ god
 K00358,Vojvodina,M,35,Prepaid,112.0,730.0,7.1,129.0,45.0,0,Poslovnica,2017-04-17,5.0,Ne,False,False,False,True,30-44,0,Ne,2017.0,102.8169014084507,Da,6+ god
-K00632,Vojvodina,Ž,37,Biznis,10.0,72090.0,5.1,343.0,50.0,0,Poslovnica,2025-10-21,5.0,Ne,True,False,False,True,30-44,0,Ne,2025.0,14135.29411764706,Da,go 1 god
 K00042,Beograd,Ž,21,Postpaid,51.0,1864.0,19.0,257.0,45.0,0,Call centar,2022-05-23,4.0,Ne,False,False,False,True,18-29,0,Ne,2022.0,98.10526315789474,Da,3-6 god
 K00004,Vojvodina,Ž,54,Postpaid,46.0,3406.0,2.6,290.0,39.0,3,Call centar,2022-10-26,2.0,Da,False,False,False,True,45-59,1,Da,2022.0,1310.0,Da,3-6 god
 K00035,Beograd,M,25,Postpaid,33.0,2120.0,15.3,88.0,40.0,0,Partner,2023-11-10,5.0,Da,False,False,False,True,18-29,1,Ne,2023.0,138.56209150326796,Da,1-3 god
@@ -800,14 +792,14 @@ K00348,Beograd,Ž,25,Prepaid,26.0,1345.0,6.4,152.0,36.0,0,Online,2024-06-14,3.0,
 K00940,Beograd,M,32,Prepaid,13.0,1146.0,27.4,184.0,42.0,1,Call centar,2025-07-22,,Ne,False,True,False,False,30-44,0,Da,2025.0,41.824817518248175,Da,1-3 god
 K00696,Južna i Istočna Srbija,Ž,41,Postpaid,25.0,3572.0,8.0,441.0,42.0,1,Poslovnica,2024-07-11,,Da,False,False,False,False,30-44,1,Da,2024.0,446.5,Da,1-3 god
 K00588,Južna i Istočna Srbija,Ž,53,Biznis,56.0,6526.0,1.4,340.0,46.0,1,Online,2021-12-17,,Ne,False,False,False,False,45-59,0,Da,2021.0,4661.428571428572,Da,3-6 god
-K00290,Šumadija i Zapadna Srbija,M,42,Prepaid,20.0,2148.5,10.7,246.0,29.0,0,Partner,2024-12-15,3.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,200.7943925233645,Da,1-3 god
+K00290,Šumadija i Zapadna Srbija,M,42,Prepaid,20.0,2141.0,10.7,246.0,29.0,0,Partner,2024-12-15,3.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,200.09345794392524,Da,1-3 god
 K01041,Južna i Istočna Srbija,Ž,58,Postpaid,74.0,3805.0,2.1,454.0,35.0,2,Poslovnica,2020-06-12,3.0,Ne,False,False,False,True,45-59,0,Da,2020.0,1811.904761904762,Da,6+ god
 K00394,Vojvodina,Ž,51,Prepaid,28.0,922.0,2.8,241.0,38.0,1,Poslovnica,2024-04-06,5.0,Ne,False,False,False,True,45-59,0,Da,2024.0,329.28571428571433,Da,1-3 god
 K00255,Šumadija i Zapadna Srbija,M,51,Postpaid,9.0,1848.0,6.8,410.0,35.0,1,Call centar,2025-11-13,2.0,Ne,False,False,False,True,45-59,0,Da,2025.0,271.7647058823529,Da,go 1 god
 K00272,Južna i Istočna Srbija,M,43,Postpaid,47.0,2669.0,1.6,150.0,34.0,1,Online,2022-09-28,3.0,Ne,False,False,True,True,30-44,0,Da,2022.0,1668.125,Da,3-6 god
 K00899,Šumadija i Zapadna Srbija,Ž,50,Prepaid,12.0,1385.0,3.3,377.0,48.0,0,Partner,2025-08-31,3.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,419.69696969696975,Da,go 1 god
 K00964,Beograd,M,52,Biznis,31.0,4575.0,2.9,259.0,43.0,0,Partner,2024-01-15,3.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,1577.5862068965519,Da,1-3 god
-K00975,Vojvodina,M,18,Biznis,131.0,2380.0,9.1,344.0,53.0,0,Online,2015-09-22,4.0,Ne,False,False,False,True,18-29,0,Ne,2015.0,261.53846153846155,Da,6+ god
+K00975,Vojvodina,M,18,Biznis,131.0,2361.0,9.1,344.0,53.0,0,Online,2015-09-22,4.0,Ne,False,False,False,True,18-29,0,Ne,2015.0,259.4505494505495,Da,6+ god
 K00658,Južna i Istočna Srbija,Ž,37,Postpaid,30.0,2478.0,6.5,250.0,44.0,2,Online,2024-02-09,2.0,Da,False,False,False,True,30-44,1,Da,2024.0,381.2307692307692,Da,1-3 god
 K01082,Vojvodina,M,47,Biznis,14.0,4302.0,3.6,357.0,36.0,0,Online,2025-07-02,3.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,1195.0,Da,1-3 god
 K00386,Beograd,M,64,Postpaid,7.0,2104.0,0.6,231.0,44.0,0,Poslovnica,2026-01-24,,Ne,False,False,False,False,60+,0,Ne,2026.0,3506.666666666667,Da,go 1 god
@@ -827,12 +819,12 @@ K00723,Južna i Istočna Srbija,M,40,Postpaid,29.0,2598.0,10.5,213.0,38.0,2,Part
 K01165,Beograd,M,45,Postpaid,19.0,4177.0,2.8,25.0,30.0,1,Partner,2025-01-10,3.0,Da,False,False,False,True,45-59,1,Da,2025.0,1491.7857142857144,Da,1-3 god
 K00266,Beograd,M,45,Prepaid,22.0,1565.0,5.4,325.0,32.0,2,Poslovnica,2024-11-02,3.0,Ne,False,False,False,True,45-59,0,Da,2024.0,289.8148148148148,Da,1-3 god
 K01081,Južna i Istočna Srbija,M,52,Prepaid,62.0,1263.0,4.5,363.0,35.0,0,Poslovnica,2021-07-02,5.0,Ne,False,False,False,True,45-59,0,Ne,2021.0,280.6666666666667,Da,3-6 god
-K00504,Beograd,M,57,Postpaid,131.0,4184.0,6.4,262.0,45.0,0,Poslovnica,2015-10-03,5.0,Ne,False,False,False,True,45-59,0,Ne,2015.0,653.75,Da,6+ god
+K00504,Beograd,M,57,Postpaid,131.0,4184.0,6.3,262.0,45.0,0,Poslovnica,2015-10-03,5.0,Ne,False,False,False,True,45-59,0,Ne,2015.0,664.1269841269841,Da,6+ god
 K01030,Šumadija i Zapadna Srbija,M,42,Prepaid,30.0,1065.0,4.3,501.0,35.0,2,Call centar,2024-02-28,3.0,Ne,False,False,False,True,30-44,0,Da,2024.0,247.67441860465118,Da,1-3 god
 K00365,Južna i Istočna Srbija,M,48,Prepaid,28.0,1206.0,1.3,140.0,30.0,0,Poslovnica,2024-04-14,3.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,927.6923076923076,Da,1-3 god
 K00422,Vojvodina,Ž,42,Postpaid,5.0,1188.0,12.9,169.0,37.0,2,Nepoznato,2026-03-15,3.0,Da,False,False,False,True,30-44,1,Da,2026.0,92.09302325581395,Da,go 1 god
 K01157,Beograd,Ž,48,Prepaid,83.0,1201.0,2.3,202.0,40.0,2,Poslovnica,2019-09-24,4.0,Ne,False,False,False,True,45-59,0,Da,2019.0,522.1739130434783,Da,6+ god
-K01049,Južna i Istočna Srbija,M,42,Postpaid,103.0,1179.0,6.4,195.0,49.0,0,Poslovnica,2018-01-28,3.0,Ne,False,False,False,True,30-44,0,Ne,2018.0,184.21875,Da,6+ god
+K01049,Južna i Istočna Srbija,M,42,Postpaid,103.0,1179.0,6.3,195.0,49.0,0,Poslovnica,2018-01-28,3.0,Ne,False,False,False,True,30-44,0,Ne,2018.0,187.14285714285714,Da,6+ god
 K00927,Beograd,M,31,Postpaid,90.0,3704.0,18.0,448.0,50.0,1,Online,2019-02-10,5.0,Ne,False,False,False,True,30-44,0,Da,2019.0,205.77777777777777,Da,6+ god
 K00510,Šumadija i Zapadna Srbija,Ž,52,Prepaid,13.0,1286.0,4.3,289.0,44.0,0,Call centar,2025-07-30,3.0,Da,False,False,False,True,45-59,1,Ne,2025.0,299.06976744186045,Da,1-3 god
 K00683,Šumadija i Zapadna Srbija,Ž,70,Prepaid,56.0,1412.0,0.9,329.0,42.0,2,Call centar,2021-12-16,5.0,Ne,False,False,False,True,60+,0,Da,2021.0,1568.888888888889,Da,3-6 god
@@ -863,7 +855,7 @@ K00159,Beograd,Ž,42,Prepaid,18.0,1200.0,4.2,265.0,33.0,0,Online,2025-02-16,2.0,
 K00217,Beograd,M,63,Prepaid,11.0,947.0,1.0,259.0,49.0,0,Poslovnica,2025-10-01,5.0,Ne,False,False,False,True,60+,0,Ne,2025.0,947.0,Da,go 1 god
 K00560,Vojvodina,M,65,Postpaid,60.0,2308.0,0.6,181.0,36.0,1,Online,2021-08-11,4.0,Ne,False,False,False,True,60+,0,Da,2021.0,3846.666666666667,Da,3-6 god
 K00400,Vojvodina,M,24,Prepaid,29.0,1477.0,9.0,324.0,33.0,0,Online,2024-03-11,3.0,Ne,False,False,False,True,18-29,0,Ne,2024.0,164.11111111111111,Da,1-3 god
-K00012,Južna i Istočna Srbija,Ž,21,Postpaid,180.0,2600.0,6.4,204.0,43.0,1,Poslovnica,2011-08-18,4.0,Ne,False,False,False,True,18-29,0,Da,2011.0,406.25,Da,6+ god
+K00012,Južna i Istočna Srbija,Ž,21,Postpaid,180.0,2600.0,6.3,204.0,43.0,1,Poslovnica,2011-08-18,4.0,Ne,False,False,False,True,18-29,0,Da,2011.0,412.6984126984127,Da,6+ god
 K00046,Vojvodina,Ž,29,Postpaid,49.0,1989.0,15.3,439.0,37.0,0,Online,2022-08-02,4.0,Ne,False,False,False,True,18-29,0,Ne,2022.0,130.0,Da,3-6 god
 K00471,Vojvodina,M,42,Prepaid,45.0,1541.0,16.9,0.0,37.0,0,Call centar,2022-11-07,5.0,Ne,False,False,False,True,30-44,0,Ne,2022.0,91.18343195266273,Da,3-6 god
 K01022,Južna i Istočna Srbija,M,70,Prepaid,115.0,1282.0,1.3,230.0,45.0,0,Partner,2017-01-21,3.0,Ne,False,False,False,True,60+,0,Ne,2017.0,986.1538461538461,Da,6+ god
@@ -891,7 +883,7 @@ K00235,Vojvodina,M,50,Postpaid,18.0,2654.0,1.4,338.0,34.0,0,Poslovnica,2025-02-0
 K00107,Vojvodina,M,39,Postpaid,30.0,3838.0,7.1,126.0,30.0,0,Poslovnica,2024-02-06,5.0,Da,False,False,False,True,30-44,1,Ne,2024.0,540.5633802816901,Da,1-3 god
 K00352,Šumadija i Zapadna Srbija,M,39,Prepaid,42.0,803.0,6.9,240.0,32.0,0,Online,2023-02-20,4.0,Da,False,False,False,True,30-44,1,Ne,2023.0,116.37681159420289,Da,3-6 god
 K00704,Vojvodina,M,50,Postpaid,39.0,3121.0,2.4,353.0,43.0,1,Online,2023-05-27,3.0,Ne,False,False,False,True,45-59,0,Da,2023.0,1300.4166666666667,Da,3-6 god
-K00645,Beograd,Ž,45,Postpaid,9.0,3681.0,6.4,338.0,35.0,0,Partner,2025-11-26,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,575.15625,Da,go 1 god
+K00645,Beograd,Ž,45,Postpaid,9.0,3681.0,6.3,338.0,35.0,0,Partner,2025-11-26,4.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,584.2857142857143,Da,go 1 god
 K01008,Beograd,M,41,Prepaid,59.0,818.0,9.8,66.0,44.0,2,Online,2021-09-27,,Da,False,False,False,False,30-44,1,Da,2021.0,83.46938775510203,Da,3-6 god
 K00730,Vojvodina,M,43,Biznis,14.0,5194.0,5.9,253.0,41.0,0,Partner,2025-06-06,4.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,880.3389830508474,Da,1-3 god
 K00751,Šumadija i Zapadna Srbija,M,66,Biznis,42.0,3902.0,1.4,366.0,35.0,1,Call centar,2023-02-13,3.0,Da,False,False,False,True,60+,1,Da,2023.0,2787.1428571428573,Da,3-6 god
@@ -903,7 +895,7 @@ K00036,Južna i Istočna Srbija,M,37,Prepaid,2.0,1488.0,15.2,370.0,38.0,1,Poslov
 K00772,Šumadija i Zapadna Srbija,Ž,57,Prepaid,5.0,818.0,1.6,385.0,39.0,0,Call centar,,4.0,Ne,False,False,False,True,45-59,0,Ne,,511.25,Da,go 1 god
 K00590,Vojvodina,M,40,Prepaid,7.0,1154.0,9.2,214.0,54.0,0,Online,2026-01-07,5.0,Ne,False,False,True,True,30-44,0,Ne,2026.0,125.43478260869566,Da,go 1 god
 K00761,Južna i Istočna Srbija,Ž,48,Postpaid,80.0,4197.0,5.0,32.0,50.0,1,Call centar,2019-12-31,4.0,Ne,False,False,False,True,45-59,0,Da,2019.0,839.4,Da,6+ god
-K00754,Beograd,Ž,50,Postpaid,10.0,2387.0,5.7,268.0,29.0,1,Online,2025-10-16,4.0,Da,False,False,False,True,45-59,1,Da,2025.0,418.77192982456137,Da,go 1 god
+K00754,Beograd,Ž,50,Postpaid,10.0,2383.0,5.7,268.0,29.0,1,Online,2025-10-16,4.0,Da,False,False,False,True,45-59,1,Da,2025.0,418.0701754385965,Da,go 1 god
 K00857,Južna i Istočna Srbija,Ž,62,Postpaid,14.0,1790.0,1.6,324.0,36.0,1,Poslovnica,2025-06-30,3.0,Ne,False,False,False,True,60+,0,Da,2025.0,1118.75,Da,1-3 god
 K01033,Beograd,M,31,Prepaid,9.0,2240.0,8.6,256.0,47.0,0,Poslovnica,2025-11-16,3.0,Da,False,False,False,True,30-44,1,Ne,2025.0,260.4651162790698,Da,go 1 god
 K00600,Beograd,Ž,33,Prepaid,25.0,1199.0,18.8,246.0,32.0,1,Online,2024-07-14,5.0,Ne,False,False,False,True,30-44,0,Da,2024.0,63.77659574468085,Da,1-3 god
@@ -924,8 +916,7 @@ K00377,Južna i Istočna Srbija,Ž,18,Postpaid,39.0,2803.0,5.9,345.0,42.0,0,Posl
 K00990,Šumadija i Zapadna Srbija,Ž,42,Prepaid,55.0,1134.0,3.9,277.0,29.0,2,Online,2022-01-06,2.0,Da,False,False,False,True,30-44,1,Da,2022.0,290.7692307692308,Da,3-6 god
 K00955,Vojvodina,Ž,41,Postpaid,23.0,1940.0,8.5,314.0,32.0,1,Poslovnica,2024-10-02,,Ne,False,False,False,False,30-44,0,Da,2024.0,228.23529411764707,Da,1-3 god
 K00895,Šumadija i Zapadna Srbija,M,29,Biznis,83.0,7299.0,8.1,338.0,42.0,3,Online,2019-09-10,3.0,Da,True,False,False,True,18-29,1,Da,2019.0,901.1111111111112,Da,6+ god
-K00214,Vojvodina,M,55,Postpaid,34.0,3699.0,6.4,181.0,46.0,0,Poslovnica,2023-10-25,5.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,577.96875,Da,1-3 god
-K00011,Južna i Istočna Srbija,Ž,47,Postpaid,65.0,24040.0,10.8,342.0,43.0,0,Partner,2021-03-24,5.0,Ne,True,False,False,True,45-59,0,Ne,2021.0,2225.9259259259256,Da,3-6 god
+K00214,Vojvodina,M,55,Postpaid,34.0,3699.0,6.3,181.0,46.0,0,Poslovnica,2023-10-25,5.0,Ne,False,False,False,True,45-59,0,Ne,2023.0,587.1428571428571,Da,1-3 god
 K00786,Šumadija i Zapadna Srbija,M,18,Postpaid,72.0,3507.0,5.9,423.0,37.0,0,Online,2020-08-24,,Ne,False,False,False,False,18-29,0,Ne,2020.0,594.4067796610169,Da,3-6 god
 K00277,Beograd,Ž,37,Postpaid,9.0,0.2298,6.9,357.0,48.0,0,Poslovnica,2025-11-08,3.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,0.033304347826086954,Da,go 1 god
 K01186,Vojvodina,Ž,34,Postpaid,65.0,2110.0,9.2,118.0,38.0,0,Online,2021-03-10,,Ne,False,False,False,False,30-44,0,Ne,2021.0,229.34782608695653,Da,3-6 god
@@ -950,8 +941,8 @@ K00181,Šumadija i Zapadna Srbija,M,56,Biznis,30.0,6861.0,2.6,77.0,36.0,2,Poslov
 K00641,Južna i Istočna Srbija,M,46,Postpaid,63.0,3214.0,5.8,343.0,34.0,0,Partner,2021-05-15,,Ne,False,False,False,False,45-59,0,Ne,2021.0,554.1379310344828,Da,3-6 god
 K01110,Beograd,M,43,Postpaid,44.0,2117.0,3.5,481.0,40.0,0,Online,2022-12-11,3.0,Da,False,False,False,True,30-44,1,Ne,2022.0,604.8571428571429,Da,3-6 god
 K00476,Južna i Istočna Srbija,M,58,Postpaid,41.0,2443.0,4.3,219.0,37.0,2,Poslovnica,2023-03-25,4.0,Ne,False,False,False,True,45-59,0,Da,2023.0,568.1395348837209,Da,3-6 god
-K00821,Beograd,Ž,32,Postpaid,64.0,2387.0,6.2,0.0,43.0,1,Call centar,2021-04-15,3.0,Ne,False,False,False,True,30-44,0,Da,2021.0,385.0,Da,3-6 god
-K00995,Beograd,M,39,Biznis,57.0,2387.0,8.4,429.0,34.0,0,Poslovnica,2021-11-14,4.0,Ne,False,False,False,True,30-44,0,Ne,2021.0,284.16666666666663,Da,3-6 god
+K00821,Beograd,Ž,32,Postpaid,64.0,2383.0,6.2,0.0,43.0,1,Call centar,2021-04-15,3.0,Ne,False,False,False,True,30-44,0,Da,2021.0,384.3548387096774,Da,3-6 god
+K00995,Beograd,M,39,Biznis,57.0,2383.0,8.4,429.0,34.0,0,Poslovnica,2021-11-14,4.0,Ne,False,False,False,True,30-44,0,Ne,2021.0,283.6904761904762,Da,3-6 god
 K01009,Južna i Istočna Srbija,M,65,Prepaid,41.0,1200.0,1.0,207.0,47.0,0,Online,2023-03-09,4.0,Da,False,False,False,True,60+,1,Ne,2023.0,1200.0,Da,3-6 god
 K00839,Šumadija i Zapadna Srbija,M,35,Postpaid,14.0,4001.0,14.1,446.0,32.0,0,Partner,2025-06-26,4.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,283.758865248227,Da,1-3 god
 K01095,Beograd,M,45,Postpaid,56.0,3961.0,14.0,455.0,43.0,0,Online,2021-12-28,4.0,Ne,False,False,False,True,45-59,0,Ne,2021.0,282.92857142857144,Da,3-6 god
@@ -975,7 +966,7 @@ K00064,Beograd,M,24,Biznis,109.0,6599.0,17.3,302.0,37.0,1,Partner,2017-07-12,3.0
 K00082,Šumadija i Zapadna Srbija,Ž,31,Prepaid,10.0,1317.0,7.1,195.0,34.0,1,Poslovnica,2025-10-23,4.0,Da,False,False,False,True,30-44,1,Da,2025.0,185.49295774647888,Da,go 1 god
 K00319,Beograd,M,49,Biznis,40.0,3867.0,6.6,220.0,35.0,2,Partner,2023-04-30,3.0,Da,False,False,False,True,45-59,1,Da,2023.0,585.909090909091,Da,3-6 god
 K01133,Vojvodina,Ž,59,Postpaid,75.0,3439.0,0.9,73.0,37.0,0,Poslovnica,2020-05-14,4.0,Ne,False,False,False,True,45-59,0,Ne,2020.0,3821.111111111111,Da,6+ god
-K00573,Šumadija i Zapadna Srbija,M,49,Postpaid,3.0,1194.0,6.4,294.0,41.0,0,Poslovnica,2026-05-20,4.0,Ne,False,False,False,True,45-59,0,Ne,2026.0,186.5625,Da,go 1 god
+K00573,Šumadija i Zapadna Srbija,M,49,Postpaid,3.0,1194.0,6.3,294.0,41.0,0,Poslovnica,2026-05-20,4.0,Ne,False,False,False,True,45-59,0,Ne,2026.0,189.52380952380952,Da,go 1 god
 K00618,Šumadija i Zapadna Srbija,Ž,60,Prepaid,21.0,1091.0,4.7,222.0,33.0,0,Poslovnica,2024-11-15,3.0,Ne,False,False,False,True,60+,0,Ne,2024.0,232.12765957446808,Da,1-3 god
 K00171,Beograd,Ž,47,Prepaid,54.0,1654.0,7.3,290.0,32.0,1,Poslovnica,2022-02-06,3.0,Ne,False,False,False,True,45-59,0,Da,2022.0,226.57534246575344,Da,3-6 god
 K00278,Beograd,Ž,40,Prepaid,3.0,842.0,6.4,270.0,46.0,1,Online,2026-05-13,5.0,Da,False,False,False,True,30-44,1,Da,2026.0,131.5625,Da,go 1 god
@@ -991,7 +982,7 @@ K00819,Beograd,Ž,29,Prepaid,79.0,1089.0,14.8,388.0,33.0,0,Call centar,2020-01-1
 K00798,Šumadija i Zapadna Srbija,M,50,Biznis,66.0,4004.0,2.1,179.0,30.0,0,Poslovnica,2021-02-14,3.0,Ne,False,False,False,True,45-59,0,Ne,2021.0,1906.6666666666665,Da,3-6 god
 K00638,Šumadija i Zapadna Srbija,M,26,Prepaid,1.0,1445.0,11.1,259.0,33.0,0,Online,2026-07-17,4.0,Da,False,False,False,True,18-29,1,Ne,2026.0,130.18018018018017,Da,go 1 god
 K00249,Beograd,Ž,18,Biznis,76.0,4646.0,17.8,277.0,34.0,0,Poslovnica,2020-04-18,5.0,Ne,False,False,False,True,18-29,0,Ne,2020.0,261.0112359550562,Da,6+ god
-K00963,Beograd,Ž,46,Postpaid,9.0,4790.0,6.4,172.0,36.0,0,Poslovnica,2025-11-15,5.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,748.4375,Da,go 1 god
+K00963,Beograd,Ž,46,Postpaid,9.0,4790.0,6.3,172.0,36.0,0,Poslovnica,2025-11-15,5.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,760.3174603174604,Da,go 1 god
 K01089,Beograd,Ž,32,Postpaid,33.0,3355.0,6.8,211.0,26.0,1,Partner,2023-11-29,5.0,Da,False,False,False,True,30-44,1,Da,2023.0,493.38235294117646,Da,1-3 god
 K00914,Vojvodina,M,45,Biznis,93.0,3274.0,8.5,460.0,46.0,0,Online,2018-11-16,4.0,Ne,False,False,False,True,45-59,0,Ne,2018.0,385.1764705882353,Da,6+ god
 K00303,Beograd,M,32,Prepaid,1.0,1539.0,19.2,346.0,43.0,0,Poslovnica,2026-07-25,4.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,80.15625,Da,go 1 god
@@ -1005,7 +996,7 @@ K00828,Šumadija i Zapadna Srbija,Ž,30,Prepaid,30.0,1586.0,6.5,239.0,36.0,0,Pos
 K01148,Vojvodina,M,59,Prepaid,1.0,1013.0,4.0,443.0,31.0,0,Online,2026-07-31,4.0,Ne,False,False,False,True,45-59,0,Ne,2026.0,253.25,Da,go 1 god
 K00005,Beograd,M,39,Postpaid,18.0,4729.0,4.2,261.0,29.0,3,Poslovnica,2025-02-16,2.0,Da,False,False,False,True,30-44,1,Da,2025.0,1125.952380952381,Da,1-3 god
 K00763,Vojvodina,M,31,Postpaid,8.0,3331.0,8.7,445.0,39.0,1,Poslovnica,2025-12-24,3.0,Da,False,False,False,True,30-44,1,Da,2025.0,382.8735632183908,Da,go 1 god
-K00601,Vojvodina,Ž,27,Prepaid,1.0,2380.0,27.2,292.0,31.0,0,Poslovnica,2026-07-09,3.0,Da,False,True,False,True,18-29,1,Ne,2026.0,87.5,Da,go 1 god
+K00601,Vojvodina,Ž,27,Prepaid,1.0,2361.0,27.2,292.0,31.0,0,Poslovnica,2026-07-09,3.0,Da,False,True,False,True,18-29,1,Ne,2026.0,86.80147058823529,Da,go 1 god
 K00565,Vojvodina,M,30,Prepaid,81.0,1435.0,8.1,291.0,35.0,2,Partner,2019-11-17,1.0,Ne,False,False,False,True,30-44,0,Da,2019.0,177.1604938271605,Da,6+ god
 K00489,Južna i Istočna Srbija,M,58,Prepaid,26.0,1133.0,3.0,71.0,34.0,0,Partner,2024-07-02,5.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,377.6666666666667,Da,1-3 god
 K00545,Šumadija i Zapadna Srbija,M,43,Prepaid,23.0,484.0,2.9,167.0,41.0,1,Poslovnica,2024-09-06,2.0,Ne,False,False,False,True,30-44,0,Da,2024.0,166.89655172413794,Da,1-3 god
@@ -1020,14 +1011,14 @@ K01006,Beograd,M,19,Postpaid,19.0,3999.0,32.4,299.0,42.0,0,Call centar,2025-01-1
 K00891,Vojvodina,Ž,46,Biznis,52.0,4162.0,11.0,0.0,42.0,0,Poslovnica,2022-04-15,5.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,378.3636363636364,Da,3-6 god
 K00922,Vojvodina,M,26,Postpaid,125.0,2580.0,18.1,160.0,38.0,0,Poslovnica,2016-04-06,4.0,Ne,False,False,False,True,18-29,0,Ne,2016.0,142.54143646408838,Da,6+ god
 K00437,Šumadija i Zapadna Srbija,Ž,50,Prepaid,51.0,939.0,6.5,188.0,37.0,4,Partner,2022-05-10,2.0,Da,False,False,False,True,45-59,1,Da,2022.0,144.46153846153845,Da,3-6 god
-K00566,Vojvodina,Ž,78,Postpaid,30.0,4125.0,6.4,117.0,30.0,3,Poslovnica,2024-02-06,3.0,Ne,False,False,False,True,60+,0,Da,2024.0,644.53125,Da,1-3 god
+K00566,Vojvodina,Ž,78,Postpaid,30.0,4125.0,6.3,117.0,30.0,3,Poslovnica,2024-02-06,3.0,Ne,False,False,False,True,60+,0,Da,2024.0,654.7619047619048,Da,1-3 god
 K00882,Šumadija i Zapadna Srbija,M,27,Postpaid,11.0,3464.0,21.6,341.0,37.0,0,Poslovnica,2025-09-19,3.0,Da,False,True,False,True,18-29,1,Ne,2025.0,160.37037037037035,Da,go 1 god
 K00456,Beograd,M,45,Prepaid,14.0,1483.0,8.2,123.0,40.0,0,Online,2025-06-12,5.0,Ne,False,False,False,True,45-59,0,Ne,2025.0,180.85365853658539,Da,1-3 god
 K00934,Južna i Istočna Srbija,M,33,Prepaid,3.0,1286.0,6.5,172.0,52.0,0,Call centar,2026-05-08,4.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,197.84615384615384,Da,go 1 god
 K00517,Vojvodina,M,21,Postpaid,89.0,3529.0,5.0,362.0,29.0,0,Poslovnica,2019-03-30,5.0,Ne,False,False,False,True,18-29,0,Ne,2019.0,705.8,Da,6+ god
 K01023,Beograd,Ž,21,Prepaid,142.0,936.0,16.6,352.0,35.0,0,Online,2014-10-16,4.0,Da,False,False,False,True,18-29,1,Ne,2014.0,56.3855421686747,Da,6+ god
 K00327,Beograd,M,45,Postpaid,44.0,3799.0,9.9,363.0,45.0,0,Call centar,2022-12-19,5.0,Ne,False,False,False,True,45-59,0,Ne,2022.0,383.73737373737373,Da,3-6 god
-K00066,Južna i Istočna Srbija,M,39,Postpaid,4.0,2482.5,7.2,467.0,45.0,0,Online,2026-04-24,5.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,344.7916666666667,Da,go 1 god
+K00066,Južna i Istočna Srbija,M,39,Postpaid,4.0,2478.0,7.2,467.0,45.0,0,Online,2026-04-24,5.0,Ne,False,False,False,True,30-44,0,Ne,2026.0,344.1666666666667,Da,go 1 god
 K00824,Šumadija i Zapadna Srbija,M,43,Postpaid,8.0,2461.0,2.8,300.0,31.0,1,Online,2025-12-06,4.0,Ne,False,False,False,True,30-44,0,Da,2025.0,878.9285714285714,Da,go 1 god
 K00736,Vojvodina,M,42,Postpaid,3.0,3251.0,6.2,336.0,36.0,1,Online,2026-05-18,3.0,Da,False,False,False,True,30-44,1,Da,2026.0,524.3548387096774,Da,go 1 god
 K00880,Vojvodina,M,18,Prepaid,13.0,1498.0,64.2,324.0,43.0,0,Poslovnica,2025-07-24,4.0,Ne,False,True,False,True,18-29,0,Ne,2025.0,23.333333333333332,Da,1-3 god
@@ -1071,11 +1062,11 @@ K00991,Beograd,Ž,49,Prepaid,14.0,848.0,3.3,251.0,35.0,0,Partner,2025-07-01,4.0,
 K00660,Južna i Istočna Srbija,M,42,Postpaid,31.0,3137.0,5.1,293.0,31.0,0,Online,2024-01-13,5.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,615.0980392156863,Da,1-3 god
 K01131,Južna i Istočna Srbija,Ž,25,Prepaid,18.0,1166.0,6.5,125.0,46.0,5,Call centar,2025-02-06,2.0,Da,False,False,False,True,18-29,1,Da,2025.0,179.3846153846154,Da,1-3 god
 K00014,Šumadija i Zapadna Srbija,M,62,Biznis,24.0,6695.0,1.1,496.0,36.0,0,Poslovnica,2024-08-08,4.0,Ne,False,False,False,True,60+,0,Ne,2024.0,6086.363636363636,Da,1-3 god
-K00224,Vojvodina,Ž,33,Biznis,110.0,6745.0,14.7,369.0,39.0,3,Poslovnica,2017-07-04,2.0,Da,False,False,False,True,30-44,1,Da,2017.0,458.843537414966,Da,6+ god
+K00224,Vojvodina,Ž,33,Biznis,110.0,6745.0,14.7,369.0,39.0,3,Poslovnica,2017-07-04,2.0,Da,True,False,False,True,30-44,1,Da,2017.0,458.843537414966,Da,6+ god
 K00633,Južna i Istočna Srbija,M,43,Biznis,60.0,4784.0,7.2,159.0,34.0,0,Online,2021-08-18,5.0,Ne,False,False,False,True,30-44,0,Ne,2021.0,664.4444444444445,Da,3-6 god
 K00549,Vojvodina,Ž,45,Postpaid,4.0,3950.0,11.4,209.0,35.0,3,Online,2026-04-30,3.0,Da,False,False,False,True,45-59,1,Da,2026.0,346.49122807017545,Da,go 1 god
 K00229,Vojvodina,Ž,26,Prepaid,13.0,1424.0,9.3,325.0,38.0,2,Poslovnica,2025-07-20,3.0,Da,False,False,False,True,18-29,1,Da,2025.0,153.11827956989245,Da,1-3 god
-K00745,Šumadija i Zapadna Srbija,M,45,Postpaid,57.0,1585.0,6.4,372.0,31.0,1,Partner,2021-11-19,4.0,Ne,False,False,False,True,45-59,0,Da,2021.0,247.65625,Da,3-6 god
+K00745,Šumadija i Zapadna Srbija,M,45,Postpaid,57.0,1585.0,6.3,372.0,31.0,1,Partner,2021-11-19,4.0,Ne,False,False,False,True,45-59,0,Da,2021.0,251.5873015873016,Da,3-6 god
 K00268,Beograd,M,43,Biznis,45.0,3407.0,3.9,562.0,30.0,0,Poslovnica,2022-12-01,4.0,Ne,False,False,False,True,30-44,0,Ne,2022.0,873.5897435897436,Da,3-6 god
 K00846,Južna i Istočna Srbija,M,43,Postpaid,41.0,2425.0,18.1,328.0,25.0,1,Online,2023-04-03,2.0,Ne,False,False,True,True,30-44,0,Da,2023.0,133.97790055248618,Da,3-6 god
 K00794,Beograd,M,39,Postpaid,121.0,3254.0,12.8,315.0,42.0,2,Online,2016-08-06,5.0,Ne,False,False,False,True,30-44,0,Da,2016.0,254.21875,Da,6+ god
@@ -1159,7 +1150,7 @@ K00076,Šumadija i Zapadna Srbija,Ž,28,Biznis,37.0,6285.0,16.3,384.0,47.0,3,Par
 K01104,Južna i Istočna Srbija,Ž,52,Prepaid,7.0,2006.0,3.2,0.0,34.0,2,Partner,2026-01-18,3.0,Da,False,False,False,True,45-59,1,Da,2026.0,626.875,Da,go 1 god
 K00985,Beograd,M,24,Postpaid,16.0,4498.0,11.9,219.0,38.0,2,Poslovnica,2025-04-07,3.0,Da,False,False,False,True,18-29,1,Da,2025.0,377.98319327731093,Da,1-3 god
 K00535,Šumadija i Zapadna Srbija,M,43,Postpaid,13.0,3717.0,4.7,224.0,44.0,0,Poslovnica,2025-07-18,3.0,Ne,False,False,False,True,30-44,0,Ne,2025.0,790.8510638297872,Da,1-3 god
-K01083,Vojvodina,Ž,39,Prepaid,25.0,2380.0,12.9,64.0,50.0,0,Partner,2024-07-31,5.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,184.49612403100775,Da,1-3 god
+K01083,Vojvodina,Ž,39,Prepaid,25.0,2361.0,12.9,64.0,50.0,0,Partner,2024-07-31,5.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,183.02325581395348,Da,1-3 god
 K00614,Šumadija i Zapadna Srbija,Ž,27,Postpaid,26.0,2128.0,18.0,346.0,40.0,0,Poslovnica,2024-06-24,,Da,False,False,False,False,18-29,1,Ne,2024.0,118.22222222222223,Da,1-3 god
 K00366,Vojvodina,Ž,42,Biznis,8.0,6411.0,10.4,200.0,47.0,0,Poslovnica,2025-12-22,4.0,Da,False,False,False,True,30-44,1,Ne,2025.0,616.4423076923076,Da,go 1 god
 K00074,Južna i Istočna Srbija,M,52,Postpaid,62.0,2027.0,2.2,248.0,49.0,1,Poslovnica,2021-06-11,,Ne,False,False,False,False,45-59,0,Da,2021.0,921.3636363636363,Da,3-6 god
@@ -1188,14 +1179,14 @@ K00776,Vojvodina,Ž,25,Postpaid,130.0,3788.0,7.8,0.0,37.0,0,Poslovnica,2015-10-2
 K00762,Južna i Istočna Srbija,Ž,51,Biznis,108.0,5630.0,6.0,294.0,33.0,1,Poslovnica,2017-08-26,4.0,Ne,False,False,False,True,45-59,0,Da,2017.0,938.3333333333334,Da,6+ god
 K00481,Beograd,Ž,46,Postpaid,20.0,3817.0,4.8,435.0,41.0,0,Poslovnica,2024-12-29,4.0,Ne,False,False,False,True,45-59,0,Ne,2024.0,795.2083333333334,Da,1-3 god
 K01052,Beograd,M,18,Prepaid,1.0,1709.0,29.6,370.0,48.0,0,Online,2026-07-26,5.0,Ne,False,True,False,True,18-29,0,Ne,2026.0,57.736486486486484,Da,go 1 god
-K00718,Šumadija i Zapadna Srbija,M,53,Postpaid,28.0,2148.5,2.0,296.0,35.0,1,Partner,2024-04-18,3.0,Ne,False,False,False,True,45-59,0,Da,2024.0,1074.25,Da,1-3 god
+K00718,Šumadija i Zapadna Srbija,M,53,Postpaid,28.0,2141.0,2.0,296.0,35.0,1,Partner,2024-04-18,3.0,Ne,False,False,False,True,45-59,0,Da,2024.0,1070.5,Da,1-3 god
 K00439,Vojvodina,M,26,Biznis,137.0,4645.0,19.4,312.0,36.0,1,Poslovnica,2015-03-24,3.0,Ne,False,False,False,True,18-29,0,Da,2015.0,239.43298969072166,Da,6+ god
 K00643,Beograd,Ž,64,Biznis,75.0,8193.0,1.0,364.0,38.0,2,Online,2020-05-22,3.0,Ne,True,False,False,True,60+,0,Da,2020.0,8193.0,Da,6+ god
 K00029,Vojvodina,Ž,50,Prepaid,12.0,766.0,3.2,485.0,34.0,2,Call centar,2025-08-26,5.0,Ne,False,False,False,True,45-59,0,Da,2025.0,239.375,Da,go 1 god
 K01024,Vojvodina,M,67,Postpaid,107.0,2378.0,0.8,261.0,37.0,0,Online,2017-09-23,5.0,Ne,False,False,False,True,60+,0,Ne,2017.0,2972.5,Da,6+ god
 K00629,Južna i Istočna Srbija,M,35,Biznis,35.0,4703.0,9.0,208.0,27.0,1,Partner,2023-09-08,5.0,Ne,False,False,False,True,30-44,0,Da,2023.0,522.5555555555555,Da,1-3 god
 K00334,Šumadija i Zapadna Srbija,M,43,Postpaid,20.0,3067.0,6.4,305.0,36.0,3,Call centar,2024-12-26,3.0,Da,False,False,False,True,30-44,1,Da,2024.0,479.21875,Da,1-3 god
-K00078,Južna i Istočna Srbija,M,18,Postpaid,8.0,2959.0,6.4,90.0,42.0,2,Poslovnica,2025-12-19,3.0,Ne,False,False,False,True,18-29,0,Da,2025.0,462.34375,Da,go 1 god
+K00078,Južna i Istočna Srbija,M,18,Postpaid,8.0,2959.0,6.3,90.0,42.0,2,Poslovnica,2025-12-19,3.0,Ne,False,False,False,True,18-29,0,Da,2025.0,469.6825396825397,Da,go 1 god
 K00953,Beograd,M,29,Prepaid,24.0,1017.0,6.5,356.0,41.0,0,Online,2024-08-27,5.0,Ne,False,False,False,True,18-29,0,Ne,2024.0,156.46153846153845,Da,1-3 god
 K00795,Južna i Istočna Srbija,M,42,Biznis,27.0,6303.0,4.5,312.0,39.0,0,Online,2024-05-16,3.0,Ne,False,False,False,True,30-44,0,Ne,2024.0,1400.6666666666667,Da,1-3 god
 K00258,Južna i Istočna Srbija,M,24,Postpaid,3.0,3593.0,11.0,388.0,40.0,0,Call centar,2026-05-07,5.0,Ne,False,False,False,True,18-29,0,Ne,2026.0,326.6363636363636,Da,go 1 god
