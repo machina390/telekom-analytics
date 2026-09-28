@@ -1,0 +1,421 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[serbian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\title{Izveštaj o analizi skupa podataka o korisnicima mobilnih usluga]}
+\author{Vuk Radović
+    \footnote{
+        Praktikant kod Dr Siniše Arsića u periodu od 8.9.2026. do 28.9.2026. Kontakt na vukradovic at hotmail.rs}}
+\begin{document}
+
+\maketitle
+
+    \section{Rezime}
+
+    \section{Podaci i priprema}
+
+    Podaci s kojima raspolažem opisuju dinamiku korišćenja mobilnih usluga korisnika sva tri tipa paketa. 
+    Greške koje sam uočio u toku rada se mogu izraziti tabelarno. Delovi podataka koji se mogu svrstati u neku od ovih klasa su imali tretman zavisno od klase kojoj pripadaju.
+    Tretiranje svake od klasa grešaka je opisano u svakoj od podsekcija dokumenta.
+
+    \begin{table}[htbp]
+    \centering
+    \caption{Rezime identifikovanih problema po klasama}
+    \label{tab:rezime-problema}
+    \small
+    \begin{tabular}{l r}
+    \toprule
+    \textbf{Klasa problema} & \textbf{Broj problema} \\
+    \midrule
+    Nedostajuće vrednosti & 252 \\
+    Nenumeričke vrednosti u numeričkim kolonama & 52 \\
+    Potpuni duplikati & 32 \\
+    Nedosledne kategorije\footnote{Neupisivanje vrednosti na \textbf{unapred dogovoren način} koji pravi problem pri automatizovanoj obradi podataka} & 186 \\
+    Negativne vrednosti & 12 \\
+    Vrednosti van dozvoljenog opsega\footnote{Precizniji izraz bi bio \textbf{van smislenih vrednosti}, ali iz stručnih razloga je morao biti upotrebljen ovaj termin.} & 6 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \begin{table}[htbp]
+    \centering
+    \caption{Deskriptivna statistika numeričkih promenljivih pre čišćenja}
+    \label{tab:mere-pre}
+    \small
+    \begin{tabular}{lrrrrrrr}
+    \toprule
+    \textbf{Promenljiva} &
+    \textbf{N} &
+    \textbf{Sred.} &
+    \textbf{Med.} &
+    \textbf{Std.} &
+    \textbf{IQR} &
+    \textbf{CV (\%)} &
+    \textbf{Asim.} \\
+    \midrule
+
+    \texttt{godine}
+    & 1184 & 42.24 & 42.50 & 14.93 & 20.00 & 35.32 & 0.86 \\
+
+    \texttt{staz\_meseci}
+    & 1232 & 41.55 & 29.00 & 39.50 & 42.25 & 95.04 & 1.61 \\
+
+    \texttt{mesecni\_racun\_rsd}
+    & 1162 & 3006.55 & 2381.50 & 3865.28 & 2145.25 & 128.51 & 10.84 \\
+
+    \texttt{potrosnja\_gb}
+    & 1178 & 11.74 & 6.30 & 60.94 & 7.08 & 519.04 & 15.10 \\
+
+    \texttt{minuti\_poziva}
+    & 1232 & 279.22 & 258.50 & 431.45 & 183.25 & 154.46 & 15.23 \\
+
+    \texttt{broj\_sms}
+    & 1232 & 38.41 & 38.00 & 6.14 & 9.00 & 15.99 & 0.23 \\
+
+    \texttt{broj\_reklamacija}
+    & 1232 & 0.76 & 0.00 & 1.03 & 1.00 & 136.15 & 1.77 \\
+
+    \texttt{ocena\_zadovoljstva}
+    & 1136 & 3.62 & 4.00 & 0.98 & 1.00 & 27.13 & -0.30 \\
+
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \begin{table}[htbp]
+    \centering
+    \caption{Deskriptivna statistika numeričkih promenljivih nakon čišćenja}
+    \label{tab:mere-posle}
+    \small
+    \begin{tabular}{lrrrrrrr}
+    \toprule
+    \textbf{Promenljiva} &
+    \textbf{N} &
+    \textbf{Sred.} &
+    \textbf{Med.} &
+    \textbf{Std.} &
+    \textbf{IQR} &
+    \textbf{CV (\%)} &
+    \textbf{Asim.} \\
+    \midrule
+
+    \texttt{godine}
+    & 1191 & 42.05 & 43.00 & 13.11 & 19.00 & 31.17 & 0.15 \\
+
+    \texttt{staz\_meseci}
+    & 1191 & 41.48 & 29.00 & 39.26 & 42.00 & 94.61 & 1.62 \\
+
+    \texttt{mesecni\_racun\_rsd}
+    & 1191 & 2673.32 & 2361.00 & 1699.95 & 2102.50 & 63.56 & 1.14 \\
+
+    \texttt{potrosnja\_gb}
+    & 1191 & 7.74 & 6.30 & 6.19 & 6.80 & 79.89 & 2.31 \\
+
+    \texttt{minuti\_poziva}
+    & 1191 & 256.62 & 259.00 & 126.46 & 180.50 & 49.26 & 0.12 \\
+
+    \texttt{broj\_sms}
+    & 1191 & 38.40 & 38.00 & 6.14 & 9.00 & 15.98 & 0.22 \\
+
+    \texttt{broj\_reklamacija}
+    & 1191 & 0.76 & 0.00 & 1.03 & 1.00 & 136.29 & 1.75 \\
+
+    \texttt{ocena\_zadovoljstva}
+    & 1095 & 3.62 & 4.00 & 0.98 & 1.00 & 27.10 & -0.31 \\
+
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+
+    
+    \subsection{Nedostajuće vrednosti}
+    Tretman nedostajućih vrednosti je zavisio od porekla ove pojave. Ipak, ovde je fokus na onim redovima
+    u kojima se to nalazilo bez moje intervencije.
+
+    \subsection{Rad sa nenumeričkim vrednostima}
+    Problem ove vrste se javljao u poljima koja su iskazivala vrednost mesečnog računa i potrošnju internet saobraćaja.
+
+    Originalno, za vrednost mesečnog racuna je predviđeno da se vrednost koja slovima glasi \textbf{dve hiljade trista pedeset dinara} iskaže kao \verb|2350|. Dakle, unosi kao što su:
+    \begin{itemize}
+        \item {2.350,00 RSD}
+        \item {2350 RSD }
+        \item {2.350 din}
+        \end{itemize}
+    nikako ne dolaze u obzir. Kako sam uočio odgovarajući obrazac u ovakvim unosima, primenio sam potreban postupak vraćanja
+    ovih unosa u očekivan oblik.
+
+    Sličan problem se javlja u polju potrošnje internet saobraćaja, s tim što je predviđeno da se potrošnja iskazuje brojevima bez pisanja obračunske jedinice.
+    \subsection{Potpuni duplikati}
+    Pod ovim se podrazumevaju čitavi redovi koji se ponavljaju. Dakle, primera radi ako na pozicijama 3 i 5 nađemo unose oblika \verb|(A,B,C,D)| (pri tome da smo pokrili sva polja koje se prate)
+    možemo sumnjati da ovaj red pripada ovoj klasi. Ovo treba razlikovati od redova gde se jedno ili više polja ponavljaju (ali ne sva !). U slučaju
+    ovog skupa, najčešće je slučaj da jedan isti korisnik koristi više mobilnih usluga, a za obe se mora voditi evidencija kao i za ostale korisnike.
+    Prolaskom kroz skup podataka i poređenjem svakog reda u odnosu na očekivanu normu sam otklonio ovaj problem ne dirajući korisnike više usluga.
+
+    \subsection{Nedosledne kategorije}
+
+    Nedoslednost u ovom polju se ogleda u problematičnom unosu u sam sistem. Takav podatak ima isto značenje za čoveka bez obzira na sve, ali
+    za postupak obrade podataka to ne važi i sprečava ga da daje tačne podatke. Vrednosti \verb|'Beograd'| i \verb|'BEOGRAD'| su za čoveka iste, jer imaju isto značenje,
+    ali za obradu podataka su različite jer se u jednom koriste samo velika, a u drugom i mala i velika slova. Takođe, \verb|'Poslovnica '| i \verb|'Poslovnica'| nisu isti unosi,
+    jer jedna je bez, a druga sa razmakom.
+
+    Kako sam imao precizan uvid u to šta je dopušteno, a šta nije, po svim spornim poljima sam postupno poredio svaki od redova  i menjao vrednosti tako da budu u skladu sa očekivanjem.
+
+    \subsection{Negativne vrednosti i one van dozvoljenih opsega}
+
+    Mada je moguće zaključiti iz naziva o kakvom problemu se radi, njegov uzork mi je i dalje nejasan:
+    \begin{itemize}
+        \item {Neko je mogao greškom da unese znak \verb|-| u predviđeno polje što bi sistem protumačio kao negativnu vrednost,}
+        \item {Vrednost koja je unesena nije mogla biti pročitana do kraja pravilno u toku postupka obrade}
+        \item {ili nešto treće što nije moguće oceniti iz ove perspektive.}
+    \end{itemize}
+
+    Trebalo bi napomenuti da sam postupak obrade ovu kategoriju namerno proširuje na sve vrednosti van opsega,
+    jer iako su drugačijeg oblika, zapravo izazivaju iste vrste problema u obradi. Tretman brojčanih polja sa ovim
+    problemima je podrazumevao pretragu u odnosu na očekivane vrednosti i njihovo označavanje markerom za nedostajuću vrednost.
+
+    Redove nisam brisao iz razloga što brisanje istih može da izazove gubitak podataka i time izveštaj koji će se generisati neće biti pouzdan. Postupak
+    obrade se nepotrebno komplikuje sa takvom vrstom odlučivanja za koju je upitno može li se pouzdano izraziti logički.
+
+    \begin{landscape}
+        \newpage
+    \section{Deskriptivna statistika}
+    \begin{table}[htbp]
+    \centering
+    \caption{Deskriptivna statistika numeričkih promenljivih}
+    \label{tab:deskriptivna-statistika}
+    \small
+    \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Promenljiva} &
+    \textbf{N} &
+    \textbf{Sredina} &
+    \textbf{Medijana} &
+    \textbf{Std. dev.} \\
+    \midrule
+
+    \texttt{godine}
+        & 1191 & 42.05 & 43.00 & 13.11 \\
+
+    \texttt{staz\_meseci}
+        & 1191 & 41.48 & 29.00 & 39.26 \\
+
+    \texttt{mesecni\_racun\_rsd}
+        & 1191 & 2673.32 & 2361.00 & 1699.95 \\
+
+    \texttt{potrosnja\_gb}
+        & 1191 & 7.74 & 6.30 & 6.19 \\
+
+    \texttt{minuti\_poziva}
+        & 1191 & 256.62 & 259.00 & 126.46 \\
+
+    \texttt{broj\_sms}
+        & 1191 & 38.40 & 38.00 & 6.14 \\
+
+    \texttt{broj\_reklamacija}
+        & 1191 & 0.76 & 0.00 & 1.03 \\
+
+    \texttt{ocena\_zadovoljstva}
+        & 1095 & 3.62 & 4.00 & 0.98 \\
+
+    \texttt{churn\_flag}
+        & 1191 & 0.223 & 0.00 & 0.42 \\
+
+    \texttt{godina\_aktivacije}
+        & 1185 & 2022.68 & 2024.00 & 3.30 \\
+
+    \texttt{racun\_po\_gb}
+        & 1191 & 660.07 & 376.39 & 877.77 \\
+
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \noindent
+    \textit{Napomena:} Promenljiva \texttt{churn\_flag} je binarno kodirana,
+    pri čemu vrednost 1 označava churn. Sredina od 0.223 odgovara stopi
+    churn-a od približno 22.3\%.
+
+        \end{landscape}
+
+    Prethodna tebla je prikazivala najvažnije mere kojima se opisuje skup podataka, tj ispitana skupina korisnika.
+
+    \textbf{Napomena:} Std. dev je skraćenica od \textbf{standardna devijacija} - metrika koja opisuje prosečno odstupanje od aritmetičke sredine ili prosečne vrednosti tog polja.
+
+    Treba imati na umu da aritmetička sredina nekada (a ovde izrazito) nije dobar podatak za opis populacije. Odgovarajućim testiranjem \footnote{Primenjen je Shapiro-Wilkov test za normalnost raspodele. Mogao je biti korišćen i Kolmogorov-Smirnovljev
+    test i na ovaj broj opseravcija bi davali isti zaključak, ali zbog preciznosti i brzine rada je on izbegnut.} je pokazano da
+    većina polja koja se prati ne ispunjava uslove \footnote{U statistici, prosečna vrednost je merilo populacije onda i samo onda kad veličina podleže tzv normalnoj raspodeli. Njena osobina
+je da se tada najveći deo vrednosti koje imamo gomila upravo oko te prosečne i da se odstupanja velike većine tih vrednosti od proseka smatraju zanemarljivim. Takođe, tačka u kojoj je prosečna vrednost deli
+    sam uzorak na dve jednake polovina tj. čini raspodelu simetričnom. Sve što od odstupa od toga daje raspodelu koja je asimetrična.} da bi mogao preko ovog podatka da opisujem kretanje vrednosti.
+
+    \textbf{Medijana} $Me$ je odabrana kao mera za opisivanje populacije zbog toga što je matematički dokazano da bez obzira na to kako su raspoređene
+    vrednosti, ona se uvek nalazi između sredine i modusa \footnote{Najčešća vrednost koja se javlja}. U našem slučaju, pošto je kretanje veličina takvo da imamo nagli skok
+    koji je praćen postupnim opadanjem (tzv. desna asimetričnost u odnosu na sredinu), važi da je prosek nešto veći od medijane. Ta razlika je u ovom slučaju prihvatljivo velika
+    i ne utiče na preciznost, a pokazuje praktično istu stvar kao prosečna vrednost tamo gde ona zaista sme da se koristi. Za primer pogledati sliku \ref{fig:churn-po-paketu}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=\textwidth]{"../rezultati/grafikoni/tipican_mesecni_racun.png"}
+        \caption{Prosečan mesečni račun tipičnog korisnika}
+        \label{fig:churn-po-paketu}
+    \end{figure}
+
+    \section{Nalazi}
+
+    Poslovni interes je zadržati što je moguće više korisnika. Od ukupno $1191$ ispitanih korisnika \footnote{Nad ovima je tehnički izvodljivo ispitivanje !}
+    curenja se uočavaju:
+
+     \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=\textwidth]{"../rezultati/grafikoni/churn_po_seg.png"}
+        \caption{Odlazak korisnika nakon godinu dana po segmentima}
+        \label{fig:churn-po-paketu}
+    \end{figure}
+
+
+    \begin{table}[htbp]
+    \centering
+    \caption{Grupe sa najvišim stopama churn-a}
+    \label{tab:najvece-churn-stope}
+    \small
+    \begin{tabular}{l l r}
+    \toprule
+    \textbf{Kategorija} & \textbf{Grupa} & \textbf{Stopa odlaska (\%)} \\
+    \midrule
+
+    Pol
+    & Ž
+    & 23.06 \\
+
+    Tip paketa
+    & Prepaid
+    & 29.56 \\
+
+    Kanal prodaje
+    & Partner
+    & 24.46 \\
+
+    Starosna grupa
+    & 30--44
+    & 24.95 \\
+
+    Staž
+    & $< 1$ god.
+    & 32.57 \\
+
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \subsection{Povezanost odlaska sa ostalim poljima}
+    Pogledati sliku \ref{fig:churn-po-paketu} kako bi se videla jačina povezanosti odlazaka sa drugim veličinama.
+
+    \begin{figure}[htbp]
+        \hspace*{-3cm}
+        \includegraphics[width=1.5\textwidth]{"../rezultati/grafikoni/korelaciona_mat.png"}
+        \caption{Korelaciona matrica odlaska i drugih veličina}
+        \label{fig:churn-po-paketu}
+    \end{figure}
+
+    \subsection{Neka istraživačka pitanja}
+
+    \subsubsection{Da li korisnici odlaze zbog nekog kanala prodaje ?}
+    Na osnovu raspoloživih 1191 upisa, verovatnoća da je ovo zaista realan trend je \textbf{manji od $1\%$} što kazuje da apsolutno ne postoji
+nikakav prostor za sumnju ovog tipa (videti sliku \ref{fig:ulaz-izlaz})
+
+    \textbf{Napomena}: Vrednost $1$ označava odlazak !
+
+    \subsubsection{Postoje li obrasci korišćenja sadržaja paketa prema starosnoj grupi ?}
+
+    \begin{table}[htbp]
+    \centering
+    \caption{Rezultati testa razlika između starosnih grupa}
+    \label{tab:kruskal-starosne-grupe}
+    \small
+    \begin{tabular}{lrrl}
+    \toprule
+    \textbf{Promenljiva} & \textbf{H statistika} & \textbf{Verovatnoća slučajnosti} & \textbf{Zaključak} \\
+    \midrule
+    Potrošnja interneta & 478.490 & $2.19 \times 10^{-103}$ & Statistički značajna razlika \\
+    Slanje poruka & 2.105 & 0.551 & Nije statistički značajno \\
+    Minuti poziva & 6.007 & 0.111 & Nije statistički značajno \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+
+    Definitivno vidimo da je potrošnja interneta zaista različita prema pripadnosti starosnoj grupi, dok su ostale veličine
+prilično uravnotežene. Naknadne analize su pokazale da je priča preko telefona i slanje poruka prilično uravnotežene među
+grupama.
+
+    Zbog praktičnosti u izveštavanju, uzeću grupaciju od 18-29 jer imam najviše njenih pripadnika, ali račun pokazuje
+isti obrazac i na drugim. Na slici \ref{fig:1829-pot} se vidi kretanje potrošnje interneta u odnosu na normalnu raspodelu. Vidi se da bez obzira
+na neuklapanje u nju, ona pokazuje prilično stabilan obrazac.
+
+    \subsubsection{Preferiraju li se neki paketi u nekim kanalima prodaje ?}
+
+    Testiranje je ukazalo da je verovatnoća preferiranja nekog paketa u nekom kanalu prodaje \textbf{manja od} $1\%$.
+    Prema tome, nema prostora ni za kakvu sumnju u ovom pogledu, što pokazuje grafik \ref{fig:paket-kanal}
+
+
+    \begin{figure}[htbp]
+        %\hspace*{-3cm}
+        \centering
+        \includegraphics[width=\textwidth]{"../rezultati/grafikoni/kanal_tip.png"}
+        \caption{Odnos odlaska i kanala prodaje}
+        \label{fig:ulaz-izlaz}
+    \end{figure}
+    \begin{figure}[htbp]
+        %\hspace*{-3cm}
+        \centering
+        \includegraphics[width=\textwidth]{"../rezultati/grafikoni/potrosnja_18-29.png"}
+        \caption{Kretanje potrošnje interneta grupacije 18-29 u odnosu na normalnu raspodelu}
+        \label{fig:1829-pot}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        %\hspace*{-3cm}
+        \centering
+        \includegraphics[width=\textwidth]{"../rezultati/grafikoni/paket_kanal.png"}
+        \caption{Kretanje potrošnje interneta grupacije 18-29 u odnosu na normalnu raspodelu}
+        \label{fig:paket-kanal}
+    \end{figure}
+
+
+
+    \newpage
+
+        \section{Prikazi važnijih kretanja}
+    U nastavku će biti prikazana kretanja važnijih veličina za potrebe analiziranja ovog segmenta tržišta.
+    \begin{figure}[htbp]
+        \hspace*{-3cm}
+        %\centering
+        \includegraphics[width=1.4\textwidth]{"../rezultati/grafikoni/churn_po_staz.png"}
+        \caption{Odlazak korisnika po stažu provedenom u TS (desno) i po tipu paketa (levo)}
+        \label{fig:paket-staz}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        \hspace*{-3cm}
+        %\centering
+        \includegraphics[width=1.5\textwidth]{"../rezultati/grafikoni/churn_po_rekl_ocena.png"}
+        \caption{Odlazak korisnika po stažu broju reklamacija (desno) i po oceni zadovoljstva (levo)}
+        \label{fig:paket-rekl}
+    \end{figure}
+
+     \begin{figure}[htbp]
+        \hspace*{-3cm}
+        %\centering
+        \includegraphics[width=1.35\textwidth]{"../rezultati/grafikoni/boxplot_racun.png"}
+        \caption{Odlazak korisnika po stažu broju reklamacija (desno) i po oceni zadovoljstva (levo)}
+        \label{fig:paket-rekl}
+    \end{figure}
+
+    \newpage
+    \section{Nalazi i ograničenja}
+\end{document}
