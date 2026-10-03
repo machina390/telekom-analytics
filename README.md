@@ -1,3 +1,13 @@
 # Some experiences 
 
 - In case of `mesecni_racun_rsd` (eng. monthly bill), when removing the row with cca 70 000 Serbian dinars (cca 600 USD), the metrics didn't change much. Only the boxplot was affected since it displays the outliers. The distribution of `broj_sms` (eng. number of SMS) got sightly below normal (not too far, but still not enough to pass `Shapiro-Wilco`) and distribution of `potrosnja_gb` (eng. data consumption) didn't even change ! 
+
+- The main issue by numbers are Prepaid users. Their average `churn` (rate of leaving the operator) is the highest among the all categories which are followed. But the **real issue** is massive leaving of users belonging to age group from 30 to 45 years old. Dataset doesn't provide much information about the reason of this beheaviour and thus makes me powerless to give any kind of real recommendation. Still general advice is to reduce monthly bill prices beacause together groups from 18-29 years old and this one are the most vulnerable in terms of their monthly income. 
+
+- Segmenation of user leaving by histplot seems absurd at first glance, but in practice managers like to read the graphs first rather than tables with percentages. Still, both of them are available
+
+- The usage of mobile data is very unbalanced in genreal, but in groups it's pretty normally distributed. It would be interesting to find which users represent those cases, analyze their traffic (lawfully !) and and see if they're making any significant impact on network. Usage of SMS and telephony is in normal range and doesn't raise particular concerns
+
+- Plan corrections should not be made per user too agressivley since it's questionable by trading laws in Serbia; should be made globally so new and actual users have equal chances of having the right one 
+
+- Users with 3 or less complaints should be equally treated as users with 5 or more. The agreement is that 7 or more complaints per year seems to be exceptionally frequent and it needs different treatment. General advice is to consider those complaints again and based on them try to make a new offer and adjust offers so these kind of situations can be avoided in future. Keep in mind that 5/7 is 75% so it means that in 12 months, the user is complaining the first nine months ! Having 5 or 6 means it's equally possible to complain or not to complain (kind of Russian Roulette isn't it ?). Users with 3 or less are the maybe the most worthy to consider because of psychological reasons. 
